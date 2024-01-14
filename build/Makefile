@@ -146,71 +146,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named NightlyMemoryCheck
-
-# Build rule for target.
-NightlyMemoryCheck: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 NightlyMemoryCheck
-.PHONY : NightlyMemoryCheck
-
-# fast build rule for target.
-NightlyMemoryCheck/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\NightlyMemoryCheck.dir\build.make CMakeFiles/NightlyMemoryCheck.dir/build
-.PHONY : NightlyMemoryCheck/fast
-
-#=============================================================================
-# Target rules for targets named Experimental
-
-# Build rule for target.
-Experimental: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Experimental
-.PHONY : Experimental
-
-# fast build rule for target.
-Experimental/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Experimental.dir\build.make CMakeFiles/Experimental.dir/build
-.PHONY : Experimental/fast
-
-#=============================================================================
-# Target rules for targets named NightlySubmit
-
-# Build rule for target.
-NightlySubmit: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 NightlySubmit
-.PHONY : NightlySubmit
-
-# fast build rule for target.
-NightlySubmit/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\NightlySubmit.dir\build.make CMakeFiles/NightlySubmit.dir/build
-.PHONY : NightlySubmit/fast
-
-#=============================================================================
-# Target rules for targets named NightlyConfigure
-
-# Build rule for target.
-NightlyConfigure: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 NightlyConfigure
-.PHONY : NightlyConfigure
-
-# fast build rule for target.
-NightlyConfigure/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\NightlyConfigure.dir\build.make CMakeFiles/NightlyConfigure.dir/build
-.PHONY : NightlyConfigure/fast
-
-#=============================================================================
-# Target rules for targets named NightlyBuild
-
-# Build rule for target.
-NightlyBuild: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 NightlyBuild
-.PHONY : NightlyBuild
-
-# fast build rule for target.
-NightlyBuild/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\NightlyBuild.dir\build.make CMakeFiles/NightlyBuild.dir/build
-.PHONY : NightlyBuild/fast
-
-#=============================================================================
 # Target rules for targets named NightlyStart
 
 # Build rule for target.
@@ -263,6 +198,84 @@ Nightly/fast:
 .PHONY : Nightly/fast
 
 #=============================================================================
+# Target rules for targets named ContinuousSubmit
+
+# Build rule for target.
+ContinuousSubmit: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ContinuousSubmit
+.PHONY : ContinuousSubmit
+
+# fast build rule for target.
+ContinuousSubmit/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ContinuousSubmit.dir\build.make CMakeFiles/ContinuousSubmit.dir/build
+.PHONY : ContinuousSubmit/fast
+
+#=============================================================================
+# Target rules for targets named ContinuousConfigure
+
+# Build rule for target.
+ContinuousConfigure: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ContinuousConfigure
+.PHONY : ContinuousConfigure
+
+# fast build rule for target.
+ContinuousConfigure/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ContinuousConfigure.dir\build.make CMakeFiles/ContinuousConfigure.dir/build
+.PHONY : ContinuousConfigure/fast
+
+#=============================================================================
+# Target rules for targets named a.out.src
+
+# Build rule for target.
+a.out.src: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 a.out.src
+.PHONY : a.out.src
+
+# fast build rule for target.
+a.out.src/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\a.out.src.dir\build.make CMakeFiles/a.out.src.dir/build
+.PHONY : a.out.src/fast
+
+#=============================================================================
+# Target rules for targets named a.out.tests
+
+# Build rule for target.
+a.out.tests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 a.out.tests
+.PHONY : a.out.tests
+
+# fast build rule for target.
+a.out.tests/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\a.out.tests.dir\build.make CMakeFiles/a.out.tests.dir/build
+.PHONY : a.out.tests/fast
+
+#=============================================================================
+# Target rules for targets named NightlyMemoryCheck
+
+# Build rule for target.
+NightlyMemoryCheck: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 NightlyMemoryCheck
+.PHONY : NightlyMemoryCheck
+
+# fast build rule for target.
+NightlyMemoryCheck/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\NightlyMemoryCheck.dir\build.make CMakeFiles/NightlyMemoryCheck.dir/build
+.PHONY : NightlyMemoryCheck/fast
+
+#=============================================================================
+# Target rules for targets named Experimental
+
+# Build rule for target.
+Experimental: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Experimental
+.PHONY : Experimental
+
+# fast build rule for target.
+Experimental/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Experimental.dir\build.make CMakeFiles/Experimental.dir/build
+.PHONY : Experimental/fast
+
+#=============================================================================
 # Target rules for targets named NightlyUpdate
 
 # Build rule for target.
@@ -274,6 +287,45 @@ NightlyUpdate: cmake_check_build_system
 NightlyUpdate/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\NightlyUpdate.dir\build.make CMakeFiles/NightlyUpdate.dir/build
 .PHONY : NightlyUpdate/fast
+
+#=============================================================================
+# Target rules for targets named NightlySubmit
+
+# Build rule for target.
+NightlySubmit: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 NightlySubmit
+.PHONY : NightlySubmit
+
+# fast build rule for target.
+NightlySubmit/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\NightlySubmit.dir\build.make CMakeFiles/NightlySubmit.dir/build
+.PHONY : NightlySubmit/fast
+
+#=============================================================================
+# Target rules for targets named NightlyBuild
+
+# Build rule for target.
+NightlyBuild: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 NightlyBuild
+.PHONY : NightlyBuild
+
+# fast build rule for target.
+NightlyBuild/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\NightlyBuild.dir\build.make CMakeFiles/NightlyBuild.dir/build
+.PHONY : NightlyBuild/fast
+
+#=============================================================================
+# Target rules for targets named NightlyConfigure
+
+# Build rule for target.
+NightlyConfigure: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 NightlyConfigure
+.PHONY : NightlyConfigure
+
+# fast build rule for target.
+NightlyConfigure/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\NightlyConfigure.dir\build.make CMakeFiles/NightlyConfigure.dir/build
+.PHONY : NightlyConfigure/fast
 
 #=============================================================================
 # Target rules for targets named NightlyCoverage
@@ -445,32 +497,6 @@ ContinuousUpdate/fast:
 .PHONY : ContinuousUpdate/fast
 
 #=============================================================================
-# Target rules for targets named ContinuousSubmit
-
-# Build rule for target.
-ContinuousSubmit: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ContinuousSubmit
-.PHONY : ContinuousSubmit
-
-# fast build rule for target.
-ContinuousSubmit/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ContinuousSubmit.dir\build.make CMakeFiles/ContinuousSubmit.dir/build
-.PHONY : ContinuousSubmit/fast
-
-#=============================================================================
-# Target rules for targets named ContinuousConfigure
-
-# Build rule for target.
-ContinuousConfigure: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ContinuousConfigure
-.PHONY : ContinuousConfigure
-
-# fast build rule for target.
-ContinuousConfigure/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ContinuousConfigure.dir\build.make CMakeFiles/ContinuousConfigure.dir/build
-.PHONY : ContinuousConfigure/fast
-
-#=============================================================================
 # Target rules for targets named ContinuousBuild
 
 # Build rule for target.
@@ -509,42 +535,80 @@ ContinuousCoverage/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ContinuousCoverage.dir\build.make CMakeFiles/ContinuousCoverage.dir/build
 .PHONY : ContinuousCoverage/fast
 
-#=============================================================================
-# Target rules for targets named hangmanPoker
-
-# Build rule for target.
-hangmanPoker: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 hangmanPoker
-.PHONY : hangmanPoker
-
-# fast build rule for target.
-hangmanPoker/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\hangmanPoker.dir\build.make CMakeFiles/hangmanPoker.dir/build
-.PHONY : hangmanPoker/fast
-
-main.obj: main.cpp.obj
-.PHONY : main.obj
+src/card.obj: src/card.cpp.obj
+.PHONY : src/card.obj
 
 # target to build an object file
-main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\hangmanPoker.dir\build.make CMakeFiles/hangmanPoker.dir/main.cpp.obj
-.PHONY : main.cpp.obj
+src/card.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\a.out.src.dir\build.make CMakeFiles/a.out.src.dir/src/card.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\a.out.tests.dir\build.make CMakeFiles/a.out.tests.dir/src/card.cpp.obj
+.PHONY : src/card.cpp.obj
 
-main.i: main.cpp.i
-.PHONY : main.i
+src/card.i: src/card.cpp.i
+.PHONY : src/card.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\hangmanPoker.dir\build.make CMakeFiles/hangmanPoker.dir/main.cpp.i
-.PHONY : main.cpp.i
+src/card.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\a.out.src.dir\build.make CMakeFiles/a.out.src.dir/src/card.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\a.out.tests.dir\build.make CMakeFiles/a.out.tests.dir/src/card.cpp.i
+.PHONY : src/card.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+src/card.s: src/card.cpp.s
+.PHONY : src/card.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\hangmanPoker.dir\build.make CMakeFiles/hangmanPoker.dir/main.cpp.s
-.PHONY : main.cpp.s
+src/card.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\a.out.src.dir\build.make CMakeFiles/a.out.src.dir/src/card.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\a.out.tests.dir\build.make CMakeFiles/a.out.tests.dir/src/card.cpp.s
+.PHONY : src/card.cpp.s
+
+src/main.obj: src/main.cpp.obj
+.PHONY : src/main.obj
+
+# target to build an object file
+src/main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\a.out.src.dir\build.make CMakeFiles/a.out.src.dir/src/main.cpp.obj
+.PHONY : src/main.cpp.obj
+
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\a.out.src.dir\build.make CMakeFiles/a.out.src.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\a.out.src.dir\build.make CMakeFiles/a.out.src.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
+
+tests/main_test.obj: tests/main_test.cpp.obj
+.PHONY : tests/main_test.obj
+
+# target to build an object file
+tests/main_test.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\a.out.tests.dir\build.make CMakeFiles/a.out.tests.dir/tests/main_test.cpp.obj
+.PHONY : tests/main_test.cpp.obj
+
+tests/main_test.i: tests/main_test.cpp.i
+.PHONY : tests/main_test.i
+
+# target to preprocess a source file
+tests/main_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\a.out.tests.dir\build.make CMakeFiles/a.out.tests.dir/tests/main_test.cpp.i
+.PHONY : tests/main_test.cpp.i
+
+tests/main_test.s: tests/main_test.cpp.s
+.PHONY : tests/main_test.s
+
+# target to generate assembly for a file
+tests/main_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\a.out.tests.dir\build.make CMakeFiles/a.out.tests.dir/tests/main_test.cpp.s
+.PHONY : tests/main_test.cpp.s
 
 # Help Target
 help:
@@ -585,10 +649,17 @@ help:
 	@echo ... NightlySubmit
 	@echo ... NightlyTest
 	@echo ... NightlyUpdate
-	@echo ... hangmanPoker
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... a.out.src
+	@echo ... a.out.tests
+	@echo ... src/card.obj
+	@echo ... src/card.i
+	@echo ... src/card.s
+	@echo ... src/main.obj
+	@echo ... src/main.i
+	@echo ... src/main.s
+	@echo ... tests/main_test.obj
+	@echo ... tests/main_test.i
+	@echo ... tests/main_test.s
 .PHONY : help
 
 

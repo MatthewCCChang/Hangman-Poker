@@ -62,7 +62,8 @@ CMAKE_BINARY_DIR = C:\Users\MatthewChang\Desktop\Work\Project\poker\build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/hangmanPoker.dir/all
+all: CMakeFiles/a.out.src.dir/all
+all: CMakeFiles/a.out.tests.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -70,16 +71,20 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/NightlyMemoryCheck.dir/clean
-clean: CMakeFiles/Experimental.dir/clean
-clean: CMakeFiles/NightlySubmit.dir/clean
-clean: CMakeFiles/NightlyConfigure.dir/clean
-clean: CMakeFiles/NightlyBuild.dir/clean
 clean: CMakeFiles/NightlyStart.dir/clean
 clean: CMakeFiles/Continuous.dir/clean
 clean: CMakeFiles/NightlyTest.dir/clean
 clean: CMakeFiles/Nightly.dir/clean
+clean: CMakeFiles/ContinuousSubmit.dir/clean
+clean: CMakeFiles/ContinuousConfigure.dir/clean
+clean: CMakeFiles/a.out.src.dir/clean
+clean: CMakeFiles/a.out.tests.dir/clean
+clean: CMakeFiles/NightlyMemoryCheck.dir/clean
+clean: CMakeFiles/Experimental.dir/clean
 clean: CMakeFiles/NightlyUpdate.dir/clean
+clean: CMakeFiles/NightlySubmit.dir/clean
+clean: CMakeFiles/NightlyBuild.dir/clean
+clean: CMakeFiles/NightlyConfigure.dir/clean
 clean: CMakeFiles/NightlyCoverage.dir/clean
 clean: CMakeFiles/NightlyMemCheck.dir/clean
 clean: CMakeFiles/ExperimentalBuild.dir/clean
@@ -93,143 +98,10 @@ clean: CMakeFiles/ExperimentalMemCheck.dir/clean
 clean: CMakeFiles/ExperimentalSubmit.dir/clean
 clean: CMakeFiles/ContinuousStart.dir/clean
 clean: CMakeFiles/ContinuousUpdate.dir/clean
-clean: CMakeFiles/ContinuousSubmit.dir/clean
-clean: CMakeFiles/ContinuousConfigure.dir/clean
 clean: CMakeFiles/ContinuousBuild.dir/clean
 clean: CMakeFiles/ContinuousTest.dir/clean
 clean: CMakeFiles/ContinuousCoverage.dir/clean
-clean: CMakeFiles/hangmanPoker.dir/clean
 .PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/NightlyMemoryCheck.dir
-
-# All Build rule for target.
-CMakeFiles/NightlyMemoryCheck.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\NightlyMemoryCheck.dir\build.make CMakeFiles/NightlyMemoryCheck.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\NightlyMemoryCheck.dir\build.make CMakeFiles/NightlyMemoryCheck.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\MatthewChang\Desktop\Work\Project\poker\build\CMakeFiles --progress-num= "Built target NightlyMemoryCheck"
-.PHONY : CMakeFiles/NightlyMemoryCheck.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/NightlyMemoryCheck.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\MatthewChang\Desktop\Work\Project\poker\build\CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/NightlyMemoryCheck.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\MatthewChang\Desktop\Work\Project\poker\build\CMakeFiles 0
-.PHONY : CMakeFiles/NightlyMemoryCheck.dir/rule
-
-# Convenience name for target.
-NightlyMemoryCheck: CMakeFiles/NightlyMemoryCheck.dir/rule
-.PHONY : NightlyMemoryCheck
-
-# clean rule for target.
-CMakeFiles/NightlyMemoryCheck.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\NightlyMemoryCheck.dir\build.make CMakeFiles/NightlyMemoryCheck.dir/clean
-.PHONY : CMakeFiles/NightlyMemoryCheck.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/Experimental.dir
-
-# All Build rule for target.
-CMakeFiles/Experimental.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Experimental.dir\build.make CMakeFiles/Experimental.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Experimental.dir\build.make CMakeFiles/Experimental.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\MatthewChang\Desktop\Work\Project\poker\build\CMakeFiles --progress-num= "Built target Experimental"
-.PHONY : CMakeFiles/Experimental.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/Experimental.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\MatthewChang\Desktop\Work\Project\poker\build\CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/Experimental.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\MatthewChang\Desktop\Work\Project\poker\build\CMakeFiles 0
-.PHONY : CMakeFiles/Experimental.dir/rule
-
-# Convenience name for target.
-Experimental: CMakeFiles/Experimental.dir/rule
-.PHONY : Experimental
-
-# clean rule for target.
-CMakeFiles/Experimental.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Experimental.dir\build.make CMakeFiles/Experimental.dir/clean
-.PHONY : CMakeFiles/Experimental.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/NightlySubmit.dir
-
-# All Build rule for target.
-CMakeFiles/NightlySubmit.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\NightlySubmit.dir\build.make CMakeFiles/NightlySubmit.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\NightlySubmit.dir\build.make CMakeFiles/NightlySubmit.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\MatthewChang\Desktop\Work\Project\poker\build\CMakeFiles --progress-num= "Built target NightlySubmit"
-.PHONY : CMakeFiles/NightlySubmit.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/NightlySubmit.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\MatthewChang\Desktop\Work\Project\poker\build\CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/NightlySubmit.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\MatthewChang\Desktop\Work\Project\poker\build\CMakeFiles 0
-.PHONY : CMakeFiles/NightlySubmit.dir/rule
-
-# Convenience name for target.
-NightlySubmit: CMakeFiles/NightlySubmit.dir/rule
-.PHONY : NightlySubmit
-
-# clean rule for target.
-CMakeFiles/NightlySubmit.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\NightlySubmit.dir\build.make CMakeFiles/NightlySubmit.dir/clean
-.PHONY : CMakeFiles/NightlySubmit.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/NightlyConfigure.dir
-
-# All Build rule for target.
-CMakeFiles/NightlyConfigure.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\NightlyConfigure.dir\build.make CMakeFiles/NightlyConfigure.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\NightlyConfigure.dir\build.make CMakeFiles/NightlyConfigure.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\MatthewChang\Desktop\Work\Project\poker\build\CMakeFiles --progress-num= "Built target NightlyConfigure"
-.PHONY : CMakeFiles/NightlyConfigure.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/NightlyConfigure.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\MatthewChang\Desktop\Work\Project\poker\build\CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/NightlyConfigure.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\MatthewChang\Desktop\Work\Project\poker\build\CMakeFiles 0
-.PHONY : CMakeFiles/NightlyConfigure.dir/rule
-
-# Convenience name for target.
-NightlyConfigure: CMakeFiles/NightlyConfigure.dir/rule
-.PHONY : NightlyConfigure
-
-# clean rule for target.
-CMakeFiles/NightlyConfigure.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\NightlyConfigure.dir\build.make CMakeFiles/NightlyConfigure.dir/clean
-.PHONY : CMakeFiles/NightlyConfigure.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/NightlyBuild.dir
-
-# All Build rule for target.
-CMakeFiles/NightlyBuild.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\NightlyBuild.dir\build.make CMakeFiles/NightlyBuild.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\NightlyBuild.dir\build.make CMakeFiles/NightlyBuild.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\MatthewChang\Desktop\Work\Project\poker\build\CMakeFiles --progress-num= "Built target NightlyBuild"
-.PHONY : CMakeFiles/NightlyBuild.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/NightlyBuild.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\MatthewChang\Desktop\Work\Project\poker\build\CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/NightlyBuild.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\MatthewChang\Desktop\Work\Project\poker\build\CMakeFiles 0
-.PHONY : CMakeFiles/NightlyBuild.dir/rule
-
-# Convenience name for target.
-NightlyBuild: CMakeFiles/NightlyBuild.dir/rule
-.PHONY : NightlyBuild
-
-# clean rule for target.
-CMakeFiles/NightlyBuild.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\NightlyBuild.dir\build.make CMakeFiles/NightlyBuild.dir/clean
-.PHONY : CMakeFiles/NightlyBuild.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/NightlyStart.dir
@@ -336,6 +208,162 @@ CMakeFiles/Nightly.dir/clean:
 .PHONY : CMakeFiles/Nightly.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/ContinuousSubmit.dir
+
+# All Build rule for target.
+CMakeFiles/ContinuousSubmit.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ContinuousSubmit.dir\build.make CMakeFiles/ContinuousSubmit.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ContinuousSubmit.dir\build.make CMakeFiles/ContinuousSubmit.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\MatthewChang\Desktop\Work\Project\poker\build\CMakeFiles --progress-num= "Built target ContinuousSubmit"
+.PHONY : CMakeFiles/ContinuousSubmit.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ContinuousSubmit.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\MatthewChang\Desktop\Work\Project\poker\build\CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/ContinuousSubmit.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\MatthewChang\Desktop\Work\Project\poker\build\CMakeFiles 0
+.PHONY : CMakeFiles/ContinuousSubmit.dir/rule
+
+# Convenience name for target.
+ContinuousSubmit: CMakeFiles/ContinuousSubmit.dir/rule
+.PHONY : ContinuousSubmit
+
+# clean rule for target.
+CMakeFiles/ContinuousSubmit.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ContinuousSubmit.dir\build.make CMakeFiles/ContinuousSubmit.dir/clean
+.PHONY : CMakeFiles/ContinuousSubmit.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ContinuousConfigure.dir
+
+# All Build rule for target.
+CMakeFiles/ContinuousConfigure.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ContinuousConfigure.dir\build.make CMakeFiles/ContinuousConfigure.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ContinuousConfigure.dir\build.make CMakeFiles/ContinuousConfigure.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\MatthewChang\Desktop\Work\Project\poker\build\CMakeFiles --progress-num= "Built target ContinuousConfigure"
+.PHONY : CMakeFiles/ContinuousConfigure.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ContinuousConfigure.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\MatthewChang\Desktop\Work\Project\poker\build\CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/ContinuousConfigure.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\MatthewChang\Desktop\Work\Project\poker\build\CMakeFiles 0
+.PHONY : CMakeFiles/ContinuousConfigure.dir/rule
+
+# Convenience name for target.
+ContinuousConfigure: CMakeFiles/ContinuousConfigure.dir/rule
+.PHONY : ContinuousConfigure
+
+# clean rule for target.
+CMakeFiles/ContinuousConfigure.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ContinuousConfigure.dir\build.make CMakeFiles/ContinuousConfigure.dir/clean
+.PHONY : CMakeFiles/ContinuousConfigure.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/a.out.src.dir
+
+# All Build rule for target.
+CMakeFiles/a.out.src.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\a.out.src.dir\build.make CMakeFiles/a.out.src.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\a.out.src.dir\build.make CMakeFiles/a.out.src.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\MatthewChang\Desktop\Work\Project\poker\build\CMakeFiles --progress-num=1,2,3 "Built target a.out.src"
+.PHONY : CMakeFiles/a.out.src.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/a.out.src.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\MatthewChang\Desktop\Work\Project\poker\build\CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/a.out.src.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\MatthewChang\Desktop\Work\Project\poker\build\CMakeFiles 0
+.PHONY : CMakeFiles/a.out.src.dir/rule
+
+# Convenience name for target.
+a.out.src: CMakeFiles/a.out.src.dir/rule
+.PHONY : a.out.src
+
+# clean rule for target.
+CMakeFiles/a.out.src.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\a.out.src.dir\build.make CMakeFiles/a.out.src.dir/clean
+.PHONY : CMakeFiles/a.out.src.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/a.out.tests.dir
+
+# All Build rule for target.
+CMakeFiles/a.out.tests.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\a.out.tests.dir\build.make CMakeFiles/a.out.tests.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\a.out.tests.dir\build.make CMakeFiles/a.out.tests.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\MatthewChang\Desktop\Work\Project\poker\build\CMakeFiles --progress-num=4,5,6 "Built target a.out.tests"
+.PHONY : CMakeFiles/a.out.tests.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/a.out.tests.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\MatthewChang\Desktop\Work\Project\poker\build\CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/a.out.tests.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\MatthewChang\Desktop\Work\Project\poker\build\CMakeFiles 0
+.PHONY : CMakeFiles/a.out.tests.dir/rule
+
+# Convenience name for target.
+a.out.tests: CMakeFiles/a.out.tests.dir/rule
+.PHONY : a.out.tests
+
+# clean rule for target.
+CMakeFiles/a.out.tests.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\a.out.tests.dir\build.make CMakeFiles/a.out.tests.dir/clean
+.PHONY : CMakeFiles/a.out.tests.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/NightlyMemoryCheck.dir
+
+# All Build rule for target.
+CMakeFiles/NightlyMemoryCheck.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\NightlyMemoryCheck.dir\build.make CMakeFiles/NightlyMemoryCheck.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\NightlyMemoryCheck.dir\build.make CMakeFiles/NightlyMemoryCheck.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\MatthewChang\Desktop\Work\Project\poker\build\CMakeFiles --progress-num= "Built target NightlyMemoryCheck"
+.PHONY : CMakeFiles/NightlyMemoryCheck.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/NightlyMemoryCheck.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\MatthewChang\Desktop\Work\Project\poker\build\CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/NightlyMemoryCheck.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\MatthewChang\Desktop\Work\Project\poker\build\CMakeFiles 0
+.PHONY : CMakeFiles/NightlyMemoryCheck.dir/rule
+
+# Convenience name for target.
+NightlyMemoryCheck: CMakeFiles/NightlyMemoryCheck.dir/rule
+.PHONY : NightlyMemoryCheck
+
+# clean rule for target.
+CMakeFiles/NightlyMemoryCheck.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\NightlyMemoryCheck.dir\build.make CMakeFiles/NightlyMemoryCheck.dir/clean
+.PHONY : CMakeFiles/NightlyMemoryCheck.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/Experimental.dir
+
+# All Build rule for target.
+CMakeFiles/Experimental.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Experimental.dir\build.make CMakeFiles/Experimental.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Experimental.dir\build.make CMakeFiles/Experimental.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\MatthewChang\Desktop\Work\Project\poker\build\CMakeFiles --progress-num= "Built target Experimental"
+.PHONY : CMakeFiles/Experimental.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/Experimental.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\MatthewChang\Desktop\Work\Project\poker\build\CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/Experimental.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\MatthewChang\Desktop\Work\Project\poker\build\CMakeFiles 0
+.PHONY : CMakeFiles/Experimental.dir/rule
+
+# Convenience name for target.
+Experimental: CMakeFiles/Experimental.dir/rule
+.PHONY : Experimental
+
+# clean rule for target.
+CMakeFiles/Experimental.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Experimental.dir\build.make CMakeFiles/Experimental.dir/clean
+.PHONY : CMakeFiles/Experimental.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/NightlyUpdate.dir
 
 # All Build rule for target.
@@ -360,6 +388,84 @@ NightlyUpdate: CMakeFiles/NightlyUpdate.dir/rule
 CMakeFiles/NightlyUpdate.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\NightlyUpdate.dir\build.make CMakeFiles/NightlyUpdate.dir/clean
 .PHONY : CMakeFiles/NightlyUpdate.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/NightlySubmit.dir
+
+# All Build rule for target.
+CMakeFiles/NightlySubmit.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\NightlySubmit.dir\build.make CMakeFiles/NightlySubmit.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\NightlySubmit.dir\build.make CMakeFiles/NightlySubmit.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\MatthewChang\Desktop\Work\Project\poker\build\CMakeFiles --progress-num= "Built target NightlySubmit"
+.PHONY : CMakeFiles/NightlySubmit.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/NightlySubmit.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\MatthewChang\Desktop\Work\Project\poker\build\CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/NightlySubmit.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\MatthewChang\Desktop\Work\Project\poker\build\CMakeFiles 0
+.PHONY : CMakeFiles/NightlySubmit.dir/rule
+
+# Convenience name for target.
+NightlySubmit: CMakeFiles/NightlySubmit.dir/rule
+.PHONY : NightlySubmit
+
+# clean rule for target.
+CMakeFiles/NightlySubmit.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\NightlySubmit.dir\build.make CMakeFiles/NightlySubmit.dir/clean
+.PHONY : CMakeFiles/NightlySubmit.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/NightlyBuild.dir
+
+# All Build rule for target.
+CMakeFiles/NightlyBuild.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\NightlyBuild.dir\build.make CMakeFiles/NightlyBuild.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\NightlyBuild.dir\build.make CMakeFiles/NightlyBuild.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\MatthewChang\Desktop\Work\Project\poker\build\CMakeFiles --progress-num= "Built target NightlyBuild"
+.PHONY : CMakeFiles/NightlyBuild.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/NightlyBuild.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\MatthewChang\Desktop\Work\Project\poker\build\CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/NightlyBuild.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\MatthewChang\Desktop\Work\Project\poker\build\CMakeFiles 0
+.PHONY : CMakeFiles/NightlyBuild.dir/rule
+
+# Convenience name for target.
+NightlyBuild: CMakeFiles/NightlyBuild.dir/rule
+.PHONY : NightlyBuild
+
+# clean rule for target.
+CMakeFiles/NightlyBuild.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\NightlyBuild.dir\build.make CMakeFiles/NightlyBuild.dir/clean
+.PHONY : CMakeFiles/NightlyBuild.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/NightlyConfigure.dir
+
+# All Build rule for target.
+CMakeFiles/NightlyConfigure.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\NightlyConfigure.dir\build.make CMakeFiles/NightlyConfigure.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\NightlyConfigure.dir\build.make CMakeFiles/NightlyConfigure.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\MatthewChang\Desktop\Work\Project\poker\build\CMakeFiles --progress-num= "Built target NightlyConfigure"
+.PHONY : CMakeFiles/NightlyConfigure.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/NightlyConfigure.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\MatthewChang\Desktop\Work\Project\poker\build\CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/NightlyConfigure.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\MatthewChang\Desktop\Work\Project\poker\build\CMakeFiles 0
+.PHONY : CMakeFiles/NightlyConfigure.dir/rule
+
+# Convenience name for target.
+NightlyConfigure: CMakeFiles/NightlyConfigure.dir/rule
+.PHONY : NightlyConfigure
+
+# clean rule for target.
+CMakeFiles/NightlyConfigure.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\NightlyConfigure.dir\build.make CMakeFiles/NightlyConfigure.dir/clean
+.PHONY : CMakeFiles/NightlyConfigure.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/NightlyCoverage.dir
@@ -700,58 +806,6 @@ CMakeFiles/ContinuousUpdate.dir/clean:
 .PHONY : CMakeFiles/ContinuousUpdate.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/ContinuousSubmit.dir
-
-# All Build rule for target.
-CMakeFiles/ContinuousSubmit.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ContinuousSubmit.dir\build.make CMakeFiles/ContinuousSubmit.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ContinuousSubmit.dir\build.make CMakeFiles/ContinuousSubmit.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\MatthewChang\Desktop\Work\Project\poker\build\CMakeFiles --progress-num= "Built target ContinuousSubmit"
-.PHONY : CMakeFiles/ContinuousSubmit.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/ContinuousSubmit.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\MatthewChang\Desktop\Work\Project\poker\build\CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/ContinuousSubmit.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\MatthewChang\Desktop\Work\Project\poker\build\CMakeFiles 0
-.PHONY : CMakeFiles/ContinuousSubmit.dir/rule
-
-# Convenience name for target.
-ContinuousSubmit: CMakeFiles/ContinuousSubmit.dir/rule
-.PHONY : ContinuousSubmit
-
-# clean rule for target.
-CMakeFiles/ContinuousSubmit.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ContinuousSubmit.dir\build.make CMakeFiles/ContinuousSubmit.dir/clean
-.PHONY : CMakeFiles/ContinuousSubmit.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/ContinuousConfigure.dir
-
-# All Build rule for target.
-CMakeFiles/ContinuousConfigure.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ContinuousConfigure.dir\build.make CMakeFiles/ContinuousConfigure.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ContinuousConfigure.dir\build.make CMakeFiles/ContinuousConfigure.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\MatthewChang\Desktop\Work\Project\poker\build\CMakeFiles --progress-num= "Built target ContinuousConfigure"
-.PHONY : CMakeFiles/ContinuousConfigure.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/ContinuousConfigure.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\MatthewChang\Desktop\Work\Project\poker\build\CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/ContinuousConfigure.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\MatthewChang\Desktop\Work\Project\poker\build\CMakeFiles 0
-.PHONY : CMakeFiles/ContinuousConfigure.dir/rule
-
-# Convenience name for target.
-ContinuousConfigure: CMakeFiles/ContinuousConfigure.dir/rule
-.PHONY : ContinuousConfigure
-
-# clean rule for target.
-CMakeFiles/ContinuousConfigure.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ContinuousConfigure.dir\build.make CMakeFiles/ContinuousConfigure.dir/clean
-.PHONY : CMakeFiles/ContinuousConfigure.dir/clean
-
-#=============================================================================
 # Target rules for target CMakeFiles/ContinuousBuild.dir
 
 # All Build rule for target.
@@ -828,32 +882,6 @@ ContinuousCoverage: CMakeFiles/ContinuousCoverage.dir/rule
 CMakeFiles/ContinuousCoverage.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ContinuousCoverage.dir\build.make CMakeFiles/ContinuousCoverage.dir/clean
 .PHONY : CMakeFiles/ContinuousCoverage.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/hangmanPoker.dir
-
-# All Build rule for target.
-CMakeFiles/hangmanPoker.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\hangmanPoker.dir\build.make CMakeFiles/hangmanPoker.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\hangmanPoker.dir\build.make CMakeFiles/hangmanPoker.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\MatthewChang\Desktop\Work\Project\poker\build\CMakeFiles --progress-num=1,2 "Built target hangmanPoker"
-.PHONY : CMakeFiles/hangmanPoker.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/hangmanPoker.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\MatthewChang\Desktop\Work\Project\poker\build\CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/hangmanPoker.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\MatthewChang\Desktop\Work\Project\poker\build\CMakeFiles 0
-.PHONY : CMakeFiles/hangmanPoker.dir/rule
-
-# Convenience name for target.
-hangmanPoker: CMakeFiles/hangmanPoker.dir/rule
-.PHONY : hangmanPoker
-
-# clean rule for target.
-CMakeFiles/hangmanPoker.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\hangmanPoker.dir\build.make CMakeFiles/hangmanPoker.dir/clean
-.PHONY : CMakeFiles/hangmanPoker.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

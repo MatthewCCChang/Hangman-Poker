@@ -153,7 +153,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=hangmanPoker
+CMAKE_PROJECT_NAME:STATIC=a.out.tests
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION:STATIC=0.1.0
@@ -304,6 +304,18 @@ MEMORYCHECK_SUPPRESSIONS_FILE:FILEPATH=
 
 //Name of the computer/site where compile is being run
 SITE:STRING=LAPTOP-LGELASII
+
+//Value Computed by CMake
+a.out.src_BINARY_DIR:STATIC=C:/Users/MatthewChang/Desktop/Work/Project/poker/build
+
+//Value Computed by CMake
+a.out.src_SOURCE_DIR:STATIC=C:/Users/MatthewChang/Desktop/Work/Project/poker
+
+//Value Computed by CMake
+a.out.tests_BINARY_DIR:STATIC=C:/Users/MatthewChang/Desktop/Work/Project/poker/build
+
+//Value Computed by CMake
+a.out.tests_SOURCE_DIR:STATIC=C:/Users/MatthewChang/Desktop/Work/Project/poker
 
 //Value Computed by CMake
 hangmanPoker_BINARY_DIR:STATIC=C:/Users/MatthewChang/Desktop/Work/Project/poker/build

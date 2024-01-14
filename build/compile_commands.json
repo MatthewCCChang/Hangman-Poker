@@ -1,7 +1,22 @@
 [
 {
   "directory": "C:/Users/MatthewChang/Desktop/Work/Project/poker/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe   -g -o CMakeFiles\\hangmanPoker.dir\\main.cpp.obj -c C:\\Users\\MatthewChang\\Desktop\\Work\\Project\\poker\\main.cpp",
-  "file": "C:/Users/MatthewChang/Desktop/Work/Project/poker/main.cpp"
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/a.out.src.dir/includes_CXX.rsp -g -Wall -pedantic-errors -Werror -ggdb -o CMakeFiles\\a.out.src.dir\\src\\card.cpp.obj -c C:\\Users\\MatthewChang\\Desktop\\Work\\Project\\poker\\src\\card.cpp",
+  "file": "C:/Users/MatthewChang/Desktop/Work/Project/poker/src/card.cpp"
+},
+{
+  "directory": "C:/Users/MatthewChang/Desktop/Work/Project/poker/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/a.out.src.dir/includes_CXX.rsp -g -Wall -pedantic-errors -Werror -ggdb -o CMakeFiles\\a.out.src.dir\\src\\main.cpp.obj -c C:\\Users\\MatthewChang\\Desktop\\Work\\Project\\poker\\src\\main.cpp",
+  "file": "C:/Users/MatthewChang/Desktop/Work/Project/poker/src/main.cpp"
+},
+{
+  "directory": "C:/Users/MatthewChang/Desktop/Work/Project/poker/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/a.out.tests.dir/includes_CXX.rsp -g -Wall -pedantic-errors -Werror -ggdb -o CMakeFiles\\a.out.tests.dir\\tests\\main_test.cpp.obj -c C:\\Users\\MatthewChang\\Desktop\\Work\\Project\\poker\\tests\\main_test.cpp",
+  "file": "C:/Users/MatthewChang/Desktop/Work/Project/poker/tests/main_test.cpp"
+},
+{
+  "directory": "C:/Users/MatthewChang/Desktop/Work/Project/poker/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/a.out.tests.dir/includes_CXX.rsp -g -Wall -pedantic-errors -Werror -ggdb -o CMakeFiles\\a.out.tests.dir\\src\\card.cpp.obj -c C:\\Users\\MatthewChang\\Desktop\\Work\\Project\\poker\\src\\card.cpp",
+  "file": "C:/Users/MatthewChang/Desktop/Work/Project/poker/src/card.cpp"
 }
 ]
