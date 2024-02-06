@@ -11,6 +11,8 @@ public:
     Deck();
     ~Deck();
 
+    // This function initializes the deck
+    void initializeDeck();
     // This function will draw a card from the deck
     void drawCard();
     // This function is used for genertaing a random number

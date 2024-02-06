@@ -7,7 +7,7 @@ private:
     int id;
 
 public:
-    Card(int number) : id(number){};
+    Card(int number);
     ~Card();
     std::string getSuit();
     int getNumber();

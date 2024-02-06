@@ -1,6 +1,4 @@
-#include <iostream>
+#include "card.h"
 
-int main()
-{
-    std::cout << "testing" << std::endl;
-}
+Card::Card(int number) : id(number) {} // 64 bit representation
+Card::~Card() {}
