@@ -83,11 +83,71 @@ CMakeFiles/a.out.src.dir/src/card.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/a.out.src.dir/src/card.cpp.s"
 	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\MatthewChang\Desktop\Work\Project\poker\src\card.cpp -o CMakeFiles\a.out.src.dir\src\card.cpp.s
 
+CMakeFiles/a.out.src.dir/src/deck.cpp.obj: CMakeFiles/a.out.src.dir/flags.make
+CMakeFiles/a.out.src.dir/src/deck.cpp.obj: CMakeFiles/a.out.src.dir/includes_CXX.rsp
+CMakeFiles/a.out.src.dir/src/deck.cpp.obj: ../src/deck.cpp
+CMakeFiles/a.out.src.dir/src/deck.cpp.obj: CMakeFiles/a.out.src.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\MatthewChang\Desktop\Work\Project\poker\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/a.out.src.dir/src/deck.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/a.out.src.dir/src/deck.cpp.obj -MF CMakeFiles\a.out.src.dir\src\deck.cpp.obj.d -o CMakeFiles\a.out.src.dir\src\deck.cpp.obj -c C:\Users\MatthewChang\Desktop\Work\Project\poker\src\deck.cpp
+
+CMakeFiles/a.out.src.dir/src/deck.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/a.out.src.dir/src/deck.cpp.i"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\MatthewChang\Desktop\Work\Project\poker\src\deck.cpp > CMakeFiles\a.out.src.dir\src\deck.cpp.i
+
+CMakeFiles/a.out.src.dir/src/deck.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/a.out.src.dir/src/deck.cpp.s"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\MatthewChang\Desktop\Work\Project\poker\src\deck.cpp -o CMakeFiles\a.out.src.dir\src\deck.cpp.s
+
+CMakeFiles/a.out.src.dir/src/game.cpp.obj: CMakeFiles/a.out.src.dir/flags.make
+CMakeFiles/a.out.src.dir/src/game.cpp.obj: CMakeFiles/a.out.src.dir/includes_CXX.rsp
+CMakeFiles/a.out.src.dir/src/game.cpp.obj: ../src/game.cpp
+CMakeFiles/a.out.src.dir/src/game.cpp.obj: CMakeFiles/a.out.src.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\MatthewChang\Desktop\Work\Project\poker\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/a.out.src.dir/src/game.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/a.out.src.dir/src/game.cpp.obj -MF CMakeFiles\a.out.src.dir\src\game.cpp.obj.d -o CMakeFiles\a.out.src.dir\src\game.cpp.obj -c C:\Users\MatthewChang\Desktop\Work\Project\poker\src\game.cpp
+
+CMakeFiles/a.out.src.dir/src/game.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/a.out.src.dir/src/game.cpp.i"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\MatthewChang\Desktop\Work\Project\poker\src\game.cpp > CMakeFiles\a.out.src.dir\src\game.cpp.i
+
+CMakeFiles/a.out.src.dir/src/game.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/a.out.src.dir/src/game.cpp.s"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\MatthewChang\Desktop\Work\Project\poker\src\game.cpp -o CMakeFiles\a.out.src.dir\src\game.cpp.s
+
+CMakeFiles/a.out.src.dir/src/gameboard.cpp.obj: CMakeFiles/a.out.src.dir/flags.make
+CMakeFiles/a.out.src.dir/src/gameboard.cpp.obj: CMakeFiles/a.out.src.dir/includes_CXX.rsp
+CMakeFiles/a.out.src.dir/src/gameboard.cpp.obj: ../src/gameboard.cpp
+CMakeFiles/a.out.src.dir/src/gameboard.cpp.obj: CMakeFiles/a.out.src.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\MatthewChang\Desktop\Work\Project\poker\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/a.out.src.dir/src/gameboard.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/a.out.src.dir/src/gameboard.cpp.obj -MF CMakeFiles\a.out.src.dir\src\gameboard.cpp.obj.d -o CMakeFiles\a.out.src.dir\src\gameboard.cpp.obj -c C:\Users\MatthewChang\Desktop\Work\Project\poker\src\gameboard.cpp
+
+CMakeFiles/a.out.src.dir/src/gameboard.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/a.out.src.dir/src/gameboard.cpp.i"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\MatthewChang\Desktop\Work\Project\poker\src\gameboard.cpp > CMakeFiles\a.out.src.dir\src\gameboard.cpp.i
+
+CMakeFiles/a.out.src.dir/src/gameboard.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/a.out.src.dir/src/gameboard.cpp.s"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\MatthewChang\Desktop\Work\Project\poker\src\gameboard.cpp -o CMakeFiles\a.out.src.dir\src\gameboard.cpp.s
+
+CMakeFiles/a.out.src.dir/src/hangman.cpp.obj: CMakeFiles/a.out.src.dir/flags.make
+CMakeFiles/a.out.src.dir/src/hangman.cpp.obj: CMakeFiles/a.out.src.dir/includes_CXX.rsp
+CMakeFiles/a.out.src.dir/src/hangman.cpp.obj: ../src/hangman.cpp
+CMakeFiles/a.out.src.dir/src/hangman.cpp.obj: CMakeFiles/a.out.src.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\MatthewChang\Desktop\Work\Project\poker\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/a.out.src.dir/src/hangman.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/a.out.src.dir/src/hangman.cpp.obj -MF CMakeFiles\a.out.src.dir\src\hangman.cpp.obj.d -o CMakeFiles\a.out.src.dir\src\hangman.cpp.obj -c C:\Users\MatthewChang\Desktop\Work\Project\poker\src\hangman.cpp
+
+CMakeFiles/a.out.src.dir/src/hangman.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/a.out.src.dir/src/hangman.cpp.i"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\MatthewChang\Desktop\Work\Project\poker\src\hangman.cpp > CMakeFiles\a.out.src.dir\src\hangman.cpp.i
+
+CMakeFiles/a.out.src.dir/src/hangman.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/a.out.src.dir/src/hangman.cpp.s"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\MatthewChang\Desktop\Work\Project\poker\src\hangman.cpp -o CMakeFiles\a.out.src.dir\src\hangman.cpp.s
+
 CMakeFiles/a.out.src.dir/src/main.cpp.obj: CMakeFiles/a.out.src.dir/flags.make
 CMakeFiles/a.out.src.dir/src/main.cpp.obj: CMakeFiles/a.out.src.dir/includes_CXX.rsp
 CMakeFiles/a.out.src.dir/src/main.cpp.obj: ../src/main.cpp
 CMakeFiles/a.out.src.dir/src/main.cpp.obj: CMakeFiles/a.out.src.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\MatthewChang\Desktop\Work\Project\poker\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/a.out.src.dir/src/main.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\MatthewChang\Desktop\Work\Project\poker\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/a.out.src.dir/src/main.cpp.obj"
 	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/a.out.src.dir/src/main.cpp.obj -MF CMakeFiles\a.out.src.dir\src\main.cpp.obj.d -o CMakeFiles\a.out.src.dir\src\main.cpp.obj -c C:\Users\MatthewChang\Desktop\Work\Project\poker\src\main.cpp
 
 CMakeFiles/a.out.src.dir/src/main.cpp.i: cmake_force
@@ -98,21 +158,46 @@ CMakeFiles/a.out.src.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/a.out.src.dir/src/main.cpp.s"
 	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\MatthewChang\Desktop\Work\Project\poker\src\main.cpp -o CMakeFiles\a.out.src.dir\src\main.cpp.s
 
+CMakeFiles/a.out.src.dir/src/player.cpp.obj: CMakeFiles/a.out.src.dir/flags.make
+CMakeFiles/a.out.src.dir/src/player.cpp.obj: CMakeFiles/a.out.src.dir/includes_CXX.rsp
+CMakeFiles/a.out.src.dir/src/player.cpp.obj: ../src/player.cpp
+CMakeFiles/a.out.src.dir/src/player.cpp.obj: CMakeFiles/a.out.src.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\MatthewChang\Desktop\Work\Project\poker\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/a.out.src.dir/src/player.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/a.out.src.dir/src/player.cpp.obj -MF CMakeFiles\a.out.src.dir\src\player.cpp.obj.d -o CMakeFiles\a.out.src.dir\src\player.cpp.obj -c C:\Users\MatthewChang\Desktop\Work\Project\poker\src\player.cpp
+
+CMakeFiles/a.out.src.dir/src/player.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/a.out.src.dir/src/player.cpp.i"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\MatthewChang\Desktop\Work\Project\poker\src\player.cpp > CMakeFiles\a.out.src.dir\src\player.cpp.i
+
+CMakeFiles/a.out.src.dir/src/player.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/a.out.src.dir/src/player.cpp.s"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\MatthewChang\Desktop\Work\Project\poker\src\player.cpp -o CMakeFiles\a.out.src.dir\src\player.cpp.s
+
 # Object files for target a.out.src
 a_out_src_OBJECTS = \
 "CMakeFiles/a.out.src.dir/src/card.cpp.obj" \
-"CMakeFiles/a.out.src.dir/src/main.cpp.obj"
+"CMakeFiles/a.out.src.dir/src/deck.cpp.obj" \
+"CMakeFiles/a.out.src.dir/src/game.cpp.obj" \
+"CMakeFiles/a.out.src.dir/src/gameboard.cpp.obj" \
+"CMakeFiles/a.out.src.dir/src/hangman.cpp.obj" \
+"CMakeFiles/a.out.src.dir/src/main.cpp.obj" \
+"CMakeFiles/a.out.src.dir/src/player.cpp.obj"
 
 # External object files for target a.out.src
 a_out_src_EXTERNAL_OBJECTS =
 
 bin/a.out.src.exe: CMakeFiles/a.out.src.dir/src/card.cpp.obj
+bin/a.out.src.exe: CMakeFiles/a.out.src.dir/src/deck.cpp.obj
+bin/a.out.src.exe: CMakeFiles/a.out.src.dir/src/game.cpp.obj
+bin/a.out.src.exe: CMakeFiles/a.out.src.dir/src/gameboard.cpp.obj
+bin/a.out.src.exe: CMakeFiles/a.out.src.dir/src/hangman.cpp.obj
 bin/a.out.src.exe: CMakeFiles/a.out.src.dir/src/main.cpp.obj
+bin/a.out.src.exe: CMakeFiles/a.out.src.dir/src/player.cpp.obj
 bin/a.out.src.exe: CMakeFiles/a.out.src.dir/build.make
 bin/a.out.src.exe: CMakeFiles/a.out.src.dir/linklibs.rsp
 bin/a.out.src.exe: CMakeFiles/a.out.src.dir/objects1.rsp
 bin/a.out.src.exe: CMakeFiles/a.out.src.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\MatthewChang\Desktop\Work\Project\poker\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable bin\a.out.src.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\MatthewChang\Desktop\Work\Project\poker\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable bin\a.out.src.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\a.out.src.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

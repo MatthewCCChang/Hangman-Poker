@@ -562,6 +562,114 @@ src/card.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\a.out.tests.dir\build.make CMakeFiles/a.out.tests.dir/src/card.cpp.s
 .PHONY : src/card.cpp.s
 
+src/deck.obj: src/deck.cpp.obj
+.PHONY : src/deck.obj
+
+# target to build an object file
+src/deck.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\a.out.src.dir\build.make CMakeFiles/a.out.src.dir/src/deck.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\a.out.tests.dir\build.make CMakeFiles/a.out.tests.dir/src/deck.cpp.obj
+.PHONY : src/deck.cpp.obj
+
+src/deck.i: src/deck.cpp.i
+.PHONY : src/deck.i
+
+# target to preprocess a source file
+src/deck.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\a.out.src.dir\build.make CMakeFiles/a.out.src.dir/src/deck.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\a.out.tests.dir\build.make CMakeFiles/a.out.tests.dir/src/deck.cpp.i
+.PHONY : src/deck.cpp.i
+
+src/deck.s: src/deck.cpp.s
+.PHONY : src/deck.s
+
+# target to generate assembly for a file
+src/deck.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\a.out.src.dir\build.make CMakeFiles/a.out.src.dir/src/deck.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\a.out.tests.dir\build.make CMakeFiles/a.out.tests.dir/src/deck.cpp.s
+.PHONY : src/deck.cpp.s
+
+src/game.obj: src/game.cpp.obj
+.PHONY : src/game.obj
+
+# target to build an object file
+src/game.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\a.out.src.dir\build.make CMakeFiles/a.out.src.dir/src/game.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\a.out.tests.dir\build.make CMakeFiles/a.out.tests.dir/src/game.cpp.obj
+.PHONY : src/game.cpp.obj
+
+src/game.i: src/game.cpp.i
+.PHONY : src/game.i
+
+# target to preprocess a source file
+src/game.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\a.out.src.dir\build.make CMakeFiles/a.out.src.dir/src/game.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\a.out.tests.dir\build.make CMakeFiles/a.out.tests.dir/src/game.cpp.i
+.PHONY : src/game.cpp.i
+
+src/game.s: src/game.cpp.s
+.PHONY : src/game.s
+
+# target to generate assembly for a file
+src/game.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\a.out.src.dir\build.make CMakeFiles/a.out.src.dir/src/game.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\a.out.tests.dir\build.make CMakeFiles/a.out.tests.dir/src/game.cpp.s
+.PHONY : src/game.cpp.s
+
+src/gameboard.obj: src/gameboard.cpp.obj
+.PHONY : src/gameboard.obj
+
+# target to build an object file
+src/gameboard.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\a.out.src.dir\build.make CMakeFiles/a.out.src.dir/src/gameboard.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\a.out.tests.dir\build.make CMakeFiles/a.out.tests.dir/src/gameboard.cpp.obj
+.PHONY : src/gameboard.cpp.obj
+
+src/gameboard.i: src/gameboard.cpp.i
+.PHONY : src/gameboard.i
+
+# target to preprocess a source file
+src/gameboard.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\a.out.src.dir\build.make CMakeFiles/a.out.src.dir/src/gameboard.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\a.out.tests.dir\build.make CMakeFiles/a.out.tests.dir/src/gameboard.cpp.i
+.PHONY : src/gameboard.cpp.i
+
+src/gameboard.s: src/gameboard.cpp.s
+.PHONY : src/gameboard.s
+
+# target to generate assembly for a file
+src/gameboard.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\a.out.src.dir\build.make CMakeFiles/a.out.src.dir/src/gameboard.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\a.out.tests.dir\build.make CMakeFiles/a.out.tests.dir/src/gameboard.cpp.s
+.PHONY : src/gameboard.cpp.s
+
+src/hangman.obj: src/hangman.cpp.obj
+.PHONY : src/hangman.obj
+
+# target to build an object file
+src/hangman.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\a.out.src.dir\build.make CMakeFiles/a.out.src.dir/src/hangman.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\a.out.tests.dir\build.make CMakeFiles/a.out.tests.dir/src/hangman.cpp.obj
+.PHONY : src/hangman.cpp.obj
+
+src/hangman.i: src/hangman.cpp.i
+.PHONY : src/hangman.i
+
+# target to preprocess a source file
+src/hangman.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\a.out.src.dir\build.make CMakeFiles/a.out.src.dir/src/hangman.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\a.out.tests.dir\build.make CMakeFiles/a.out.tests.dir/src/hangman.cpp.i
+.PHONY : src/hangman.cpp.i
+
+src/hangman.s: src/hangman.cpp.s
+.PHONY : src/hangman.s
+
+# target to generate assembly for a file
+src/hangman.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\a.out.src.dir\build.make CMakeFiles/a.out.src.dir/src/hangman.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\a.out.tests.dir\build.make CMakeFiles/a.out.tests.dir/src/hangman.cpp.s
+.PHONY : src/hangman.cpp.s
+
 src/main.obj: src/main.cpp.obj
 .PHONY : src/main.obj
 
@@ -585,6 +693,33 @@ src/main.s: src/main.cpp.s
 src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\a.out.src.dir\build.make CMakeFiles/a.out.src.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
+
+src/player.obj: src/player.cpp.obj
+.PHONY : src/player.obj
+
+# target to build an object file
+src/player.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\a.out.src.dir\build.make CMakeFiles/a.out.src.dir/src/player.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\a.out.tests.dir\build.make CMakeFiles/a.out.tests.dir/src/player.cpp.obj
+.PHONY : src/player.cpp.obj
+
+src/player.i: src/player.cpp.i
+.PHONY : src/player.i
+
+# target to preprocess a source file
+src/player.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\a.out.src.dir\build.make CMakeFiles/a.out.src.dir/src/player.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\a.out.tests.dir\build.make CMakeFiles/a.out.tests.dir/src/player.cpp.i
+.PHONY : src/player.cpp.i
+
+src/player.s: src/player.cpp.s
+.PHONY : src/player.s
+
+# target to generate assembly for a file
+src/player.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\a.out.src.dir\build.make CMakeFiles/a.out.src.dir/src/player.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\a.out.tests.dir\build.make CMakeFiles/a.out.tests.dir/src/player.cpp.s
+.PHONY : src/player.cpp.s
 
 tests/main_test.obj: tests/main_test.cpp.obj
 .PHONY : tests/main_test.obj
@@ -654,9 +789,24 @@ help:
 	@echo ... src/card.obj
 	@echo ... src/card.i
 	@echo ... src/card.s
+	@echo ... src/deck.obj
+	@echo ... src/deck.i
+	@echo ... src/deck.s
+	@echo ... src/game.obj
+	@echo ... src/game.i
+	@echo ... src/game.s
+	@echo ... src/gameboard.obj
+	@echo ... src/gameboard.i
+	@echo ... src/gameboard.s
+	@echo ... src/hangman.obj
+	@echo ... src/hangman.i
+	@echo ... src/hangman.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s
+	@echo ... src/player.obj
+	@echo ... src/player.i
+	@echo ... src/player.s
 	@echo ... tests/main_test.obj
 	@echo ... tests/main_test.i
 	@echo ... tests/main_test.s

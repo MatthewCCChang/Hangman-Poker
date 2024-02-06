@@ -12,4 +12,7 @@ int main()
     Game: river has five cards, displays player's win rate after revelation of 3/1/1 cards against computer.
         Player has 5 chances to guess as in hangman(diff lvs? for guessing suit as well?)
     Hangman: 5 chances, each time incorrect subtracts one life. life=0 lose, if correct before that user wins
+
+
+
 */

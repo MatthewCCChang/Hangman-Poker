@@ -6,8 +6,33 @@
 },
 {
   "directory": "C:/Users/MatthewChang/Desktop/Work/Project/poker/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/a.out.src.dir/includes_CXX.rsp -g -Wall -pedantic-errors -Werror -ggdb -o CMakeFiles\\a.out.src.dir\\src\\deck.cpp.obj -c C:\\Users\\MatthewChang\\Desktop\\Work\\Project\\poker\\src\\deck.cpp",
+  "file": "C:/Users/MatthewChang/Desktop/Work/Project/poker/src/deck.cpp"
+},
+{
+  "directory": "C:/Users/MatthewChang/Desktop/Work/Project/poker/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/a.out.src.dir/includes_CXX.rsp -g -Wall -pedantic-errors -Werror -ggdb -o CMakeFiles\\a.out.src.dir\\src\\game.cpp.obj -c C:\\Users\\MatthewChang\\Desktop\\Work\\Project\\poker\\src\\game.cpp",
+  "file": "C:/Users/MatthewChang/Desktop/Work/Project/poker/src/game.cpp"
+},
+{
+  "directory": "C:/Users/MatthewChang/Desktop/Work/Project/poker/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/a.out.src.dir/includes_CXX.rsp -g -Wall -pedantic-errors -Werror -ggdb -o CMakeFiles\\a.out.src.dir\\src\\gameboard.cpp.obj -c C:\\Users\\MatthewChang\\Desktop\\Work\\Project\\poker\\src\\gameboard.cpp",
+  "file": "C:/Users/MatthewChang/Desktop/Work/Project/poker/src/gameboard.cpp"
+},
+{
+  "directory": "C:/Users/MatthewChang/Desktop/Work/Project/poker/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/a.out.src.dir/includes_CXX.rsp -g -Wall -pedantic-errors -Werror -ggdb -o CMakeFiles\\a.out.src.dir\\src\\hangman.cpp.obj -c C:\\Users\\MatthewChang\\Desktop\\Work\\Project\\poker\\src\\hangman.cpp",
+  "file": "C:/Users/MatthewChang/Desktop/Work/Project/poker/src/hangman.cpp"
+},
+{
+  "directory": "C:/Users/MatthewChang/Desktop/Work/Project/poker/build",
   "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/a.out.src.dir/includes_CXX.rsp -g -Wall -pedantic-errors -Werror -ggdb -o CMakeFiles\\a.out.src.dir\\src\\main.cpp.obj -c C:\\Users\\MatthewChang\\Desktop\\Work\\Project\\poker\\src\\main.cpp",
   "file": "C:/Users/MatthewChang/Desktop/Work/Project/poker/src/main.cpp"
+},
+{
+  "directory": "C:/Users/MatthewChang/Desktop/Work/Project/poker/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/a.out.src.dir/includes_CXX.rsp -g -Wall -pedantic-errors -Werror -ggdb -o CMakeFiles\\a.out.src.dir\\src\\player.cpp.obj -c C:\\Users\\MatthewChang\\Desktop\\Work\\Project\\poker\\src\\player.cpp",
+  "file": "C:/Users/MatthewChang/Desktop/Work/Project/poker/src/player.cpp"
 },
 {
   "directory": "C:/Users/MatthewChang/Desktop/Work/Project/poker/build",
@@ -18,5 +43,30 @@
   "directory": "C:/Users/MatthewChang/Desktop/Work/Project/poker/build",
   "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/a.out.tests.dir/includes_CXX.rsp -g -Wall -pedantic-errors -Werror -ggdb -o CMakeFiles\\a.out.tests.dir\\src\\card.cpp.obj -c C:\\Users\\MatthewChang\\Desktop\\Work\\Project\\poker\\src\\card.cpp",
   "file": "C:/Users/MatthewChang/Desktop/Work/Project/poker/src/card.cpp"
+},
+{
+  "directory": "C:/Users/MatthewChang/Desktop/Work/Project/poker/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/a.out.tests.dir/includes_CXX.rsp -g -Wall -pedantic-errors -Werror -ggdb -o CMakeFiles\\a.out.tests.dir\\src\\deck.cpp.obj -c C:\\Users\\MatthewChang\\Desktop\\Work\\Project\\poker\\src\\deck.cpp",
+  "file": "C:/Users/MatthewChang/Desktop/Work/Project/poker/src/deck.cpp"
+},
+{
+  "directory": "C:/Users/MatthewChang/Desktop/Work/Project/poker/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/a.out.tests.dir/includes_CXX.rsp -g -Wall -pedantic-errors -Werror -ggdb -o CMakeFiles\\a.out.tests.dir\\src\\game.cpp.obj -c C:\\Users\\MatthewChang\\Desktop\\Work\\Project\\poker\\src\\game.cpp",
+  "file": "C:/Users/MatthewChang/Desktop/Work/Project/poker/src/game.cpp"
+},
+{
+  "directory": "C:/Users/MatthewChang/Desktop/Work/Project/poker/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/a.out.tests.dir/includes_CXX.rsp -g -Wall -pedantic-errors -Werror -ggdb -o CMakeFiles\\a.out.tests.dir\\src\\gameboard.cpp.obj -c C:\\Users\\MatthewChang\\Desktop\\Work\\Project\\poker\\src\\gameboard.cpp",
+  "file": "C:/Users/MatthewChang/Desktop/Work/Project/poker/src/gameboard.cpp"
+},
+{
+  "directory": "C:/Users/MatthewChang/Desktop/Work/Project/poker/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/a.out.tests.dir/includes_CXX.rsp -g -Wall -pedantic-errors -Werror -ggdb -o CMakeFiles\\a.out.tests.dir\\src\\hangman.cpp.obj -c C:\\Users\\MatthewChang\\Desktop\\Work\\Project\\poker\\src\\hangman.cpp",
+  "file": "C:/Users/MatthewChang/Desktop/Work/Project/poker/src/hangman.cpp"
+},
+{
+  "directory": "C:/Users/MatthewChang/Desktop/Work/Project/poker/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/a.out.tests.dir/includes_CXX.rsp -g -Wall -pedantic-errors -Werror -ggdb -o CMakeFiles\\a.out.tests.dir\\src\\player.cpp.obj -c C:\\Users\\MatthewChang\\Desktop\\Work\\Project\\poker\\src\\player.cpp",
+  "file": "C:/Users/MatthewChang/Desktop/Work/Project/poker/src/player.cpp"
 }
 ]

@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "bin/a.out.src.exe"
+			"path" : "bin/a.out.tests.exe"
 		},
 		{
-			"path" : "bin/a.out.src.pdb"
+			"path" : "bin/a.out.tests.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -29,19 +29,25 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 17,
+				"line" : 30,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 20,
+				"line" : 34,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 19,
+				"line" : 32,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 33,
 				"parent" : 0
 			}
 		]
@@ -63,17 +69,26 @@
 				{
 					"backtrace" : 3,
 					"path" : "C:/Users/MatthewChang/Desktop/Work/Project/poker/src"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "C:/Users/MatthewChang/Desktop/Work/Project/poker/tests"
 				}
 			],
 			"language" : "CXX",
 			"sourceIndexes" : 
 			[
 				0,
-				1
+				1,
+				2,
+				3,
+				4,
+				5,
+				6
 			]
 		}
 	],
-	"id" : "a.out.src::@6890427a1f51a3e7e1df",
+	"id" : "a.out.tests::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -98,8 +113,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "a.out.src",
-	"nameOnDisk" : "a.out.src.exe",
+	"name" : "a.out.tests",
+	"nameOnDisk" : "a.out.tests.exe",
 	"paths" : 
 	{
 		"build" : ".",
@@ -112,12 +127,23 @@
 			"sourceIndexes" : 
 			[
 				0,
-				1
+				1,
+				2,
+				3,
+				4,
+				5,
+				6
 			]
 		}
 	],
 	"sources" : 
 	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "tests/main_test.cpp",
+			"sourceGroupIndex" : 0
+		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
@@ -127,7 +153,31 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/main.cpp",
+			"path" : "src/deck.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/game.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/gameboard.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/hangman.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/player.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],
