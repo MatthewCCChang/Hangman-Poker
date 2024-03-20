@@ -1,3 +1,6 @@
+#ifndef DECK_H
+#define DECK_H
+
 #include <vector>
 #include <ostream>
 #include "card.h"
@@ -5,7 +8,7 @@
 class Deck
 {
 private:
-    std::vector<int> cards;
+    std::vector<Card> cards;
 
 public:
     Deck();
@@ -26,3 +29,4 @@ public:
     // This function prints out the deck
     friend std::ostream &operator<<(std::ostream &out, const Deck &deck);
 };
+#endif
