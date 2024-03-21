@@ -12,15 +12,17 @@ void Card::initializeId()
     int temp = 1;
     if (suit == "Diamonds")
     { // CDHS
-        temp << 2;
+        temp <<= 2;
     }
     else if (suit == "Hearts")
     {
-        temp << 1;
+        temp <<= 1;
     }
     else if (suit == "Clubs")
     {
-        temp << 3;
+        temp <<= 3;
     }
-    this->id = ((((temp << 4 || temp) << 4) || rank) << 8) || prime;
+    int valueSuit = ((value <<= 4 || temp) <<= 4);
+    int withRank = (valueSuit || rank);
+    this->id = (withRank <<= 8) || prime;
 }

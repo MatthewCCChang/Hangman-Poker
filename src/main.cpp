@@ -1,8 +1,8 @@
 #include <iostream>
 #include <cassert>
 // #include "../phevaluator/phevaluator.h"
-#include "./card.h"
-#include "./deck.h"
+#include "card.h"
+#include "deck.h"
 
 int main()
 {

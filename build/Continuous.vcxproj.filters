@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\MatthewChang\Desktop\Work\Project\poker\build\CMakeFiles\2d3b89c0b91646313f5d4406496e3852\Continuous.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\MatthewChang\Desktop\Work\Project\poker\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\MatthewChang\Desktop\Work\Project\poker\build\CMakeFiles\Continuous" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{0C7A19C2-5252-353A-BFE2-AA08767F8CA0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

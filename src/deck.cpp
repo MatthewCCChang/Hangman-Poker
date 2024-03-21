@@ -1,8 +1,6 @@
 #include "deck.h"
 #include <random>
 #include <iostream>
-#include <cassert>
-#include "../../phevaluator/phevaluator.h"
 Deck::Deck()
 {
     // initialize cards with four loops each running 13
@@ -19,8 +17,8 @@ bool Deck::isPrime(int n)
     {
         if (n % i == 0)
             return false;
-        return true;
     }
+    return true;
 }
 
 void Deck::initializePrime()
@@ -33,6 +31,7 @@ void Deck::initializePrime()
             this->prime.push_back(i);
         }
     }
+    std::cout << "reached here" << std::endl;
 }
 
 void Deck::initializeDeck()
@@ -49,8 +48,9 @@ void Deck::initializeDeck()
 
 void Deck::drawCard()
 {
-    std::random_device rd;
-    std::uniform_int_distribution<int> number(0, 51); // then shift by that much
-    int temp = number(rd);
-    int rand = 1 << temp;
+    // std::random_device rd;
+    // std::uniform_int_distribution<int> number(0, 51); // then shift by that much
+    // int temp = number(rd);
+    // int rand = 1 << temp;
+    return;
 }
