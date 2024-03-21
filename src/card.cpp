@@ -26,3 +26,9 @@ void Card::initializeId()
     int withRank = (valueSuit || rank);
     this->id = (withRank <<= 8) || prime;
 }
+
+std::ostream &operator<<(std::ostream &out, const Card &card)
+{
+    out << card.value << " " << card.suit << " " << card.rank << " " << card.prime;
+    return out;
+}

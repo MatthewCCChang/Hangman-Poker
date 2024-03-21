@@ -33,6 +33,6 @@ public:
     // // This function returns the number of cards with the same suit left
     // int remainingSuit(const Card &card);
     // // This function prints out the deck
-    // friend std::ostream &operator<<(std::ostream &out, const Deck &deck);
+    friend std::ostream &operator<<(std::ostream &out, const Deck &deck);
 };
 #endif

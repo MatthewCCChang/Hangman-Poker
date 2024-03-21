@@ -8,6 +8,7 @@ int main()
 {
     Deck testing = Deck();
     std::cout << "testing" << std::endl;
+    std::cout << testing << std::endl;
 }
 
 /*

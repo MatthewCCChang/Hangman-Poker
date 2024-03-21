@@ -25,6 +25,6 @@ public:
     // std::string getSuit();
     // int getNumber();
     // bool isAvailable();
-    // friend std::ostream &operator<<(std::ostream &out, const Card &card);
+    friend std::ostream &operator<<(std::ostream &out, const Card &card);
 };
 #endif

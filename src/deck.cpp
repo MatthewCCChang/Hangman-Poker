@@ -24,7 +24,7 @@ bool Deck::isPrime(int n)
 void Deck::initializePrime()
 {
     this->prime.push_back(2);
-    for (int i = 3; i < 54; i++)
+    for (int i = 3; i < 44; i++)
     {
         if (isPrime(i))
         {
@@ -39,10 +39,10 @@ void Deck::initializeDeck()
     for (int i = 0; i < 13; ++i)
     {
         int temp = 1 << i;
-        this->cards.push_back(Card(std::string("Diamonds"), temp, i + 2, prime[i]));
-        this->cards.push_back(Card(std::string("Spades"), temp, i + 2, prime[i]));
-        this->cards.push_back(Card(std::string("Hearts"), temp, i + 2, prime[i]));
-        this->cards.push_back(Card(std::string("Clubs"), temp, i + 2, prime[i]));
+        this->cards.push_back(Card(std::string("Diamonds"), temp, i, prime[i]));
+        this->cards.push_back(Card(std::string("Spades"), temp, i, prime[i]));
+        this->cards.push_back(Card(std::string("Hearts"), temp, i, prime[i]));
+        this->cards.push_back(Card(std::string("Clubs"), temp, i, prime[i]));
     }
 }
 
@@ -53,4 +53,13 @@ void Deck::drawCard()
     // int temp = number(rd);
     // int rand = 1 << temp;
     return;
+}
+
+std::ostream &operator<<(std::ostream &out, const Deck &deck)
+{
+    for (auto card : deck.cards)
+    {
+        out << card << "\n";
+    }
+    return out;
 }
