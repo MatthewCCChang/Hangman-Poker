@@ -9,6 +9,14 @@ int main()
     Deck testing = Deck();
     std::cout << "testing" << std::endl;
     std::cout << testing << std::endl;
+    /*
+        after presenting the board, will goto each hand and check flush->straight/HC->pairs and others to get ranking of that hand
+        -gameboard & hand
+        game starts gameboard, when ends, will show result whether guessed right or wrong
+        -hand class: each row in order.txt is one combo which will be stored in a hash map/array with ranking as val and prime product as key
+            on start up, populate array from all vals in Deck
+        -either read from file or fill in manually; keep ranking no., suit, and cards
+    */
 }
 
 /*
