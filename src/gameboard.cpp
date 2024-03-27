@@ -1,0 +1,76 @@
+#include <string>
+#include <sstream>
+#include <fstream>
+#include <iostream>
+#include "gameboard.h"
+Gameboard::Gameboard()
+{
+    // fill the map
+    deck = Deck();
+    fillMap();
+}
+
+Gameboard::~Gameboard()
+{
+    // nothing
+}
+
+void Gameboard::fillMap()
+{
+    std::map<std::string, int> rank = {
+        {"A", 41},
+        {"K", 37},
+        {"Q", 31},
+        {"J", 29},
+        {"T", 23},
+        {"9", 19},
+        {"8", 17},
+        {"7", 13},
+        {"6", 11},
+        {"5", 7},
+        {"4", 5},
+        {"3", 3},
+        {"2", 2},
+    };
+    // int counter = 1;
+    std::ifstream file("order.txt");
+    std::string line;
+    if (file.is_open())
+    {
+        // Read each line from the file and store it in the
+        // 'line' variable.
+        while (std::getline(file, line, '\n'))
+        {
+            std::stringstream ss(line);
+            std::string word;
+            int key = 0, counter = 0;
+            int value = 1;
+            while (ss >> word)
+            {
+                // std::cout << word << " " << counter << std::endl;
+                if (!counter)
+                {
+                    key = std::stoi(word);
+                }
+                if (counter > 4 && counter < 10)
+                {
+                    value *= rank.find(word)->second;
+                }
+                counter++;
+            }
+            table[key] = value;
+            // std::cout << key << " " << value << std::endl;
+            // break;
+        }
+
+        // Close the file stream once all lines have been
+        // read.
+        file.close();
+    }
+    else
+    {
+        // Print an error message to the standard error
+        // stream if the file cannot be opened.
+        std::cerr << "Unable to open file!" << std::endl;
+    }
+}

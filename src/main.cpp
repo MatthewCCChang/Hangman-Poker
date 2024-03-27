@@ -3,12 +3,14 @@
 // #include "../phevaluator/phevaluator.h"
 #include "card.h"
 #include "deck.h"
+#include "gameboard.h"
 
 int main()
 {
-    Deck testing = Deck();
+    // Deck testing = Deck();
+    Gameboard game = Gameboard();
     std::cout << "testing" << std::endl;
-    std::cout << testing << std::endl;
+    // std::cout << testing << std::endl;
     /*
         after presenting the board, will goto each hand and check flush->straight/HC->pairs and others to get ranking of that hand
         -gameboard & hand
