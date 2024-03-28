@@ -23,8 +23,9 @@ public:
     // This initializes the id of a Card from the suit, value, rank, and prime attributes
     void initializeId();
     // std::string getSuit();
-    // int getNumber();
-    // bool isAvailable();
+    int getRank();
+    void changeAvailability();
+    bool isAvailable();
     friend std::ostream &operator<<(std::ostream &out, const Card &card);
 };
 #endif

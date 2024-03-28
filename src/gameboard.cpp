@@ -74,3 +74,11 @@ void Gameboard::fillMap()
         std::cerr << "Unable to open file!" << std::endl;
     }
 }
+
+std::vector<Card> Gameboard::showHand()
+{
+    std::vector<Card> res;
+    Card drawn = deck.drawCard();
+    res.push_back(drawn);
+    return res;
+}

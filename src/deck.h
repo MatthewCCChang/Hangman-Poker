@@ -23,7 +23,7 @@ public:
     // This function checks if a number is a prime number
     bool isPrime(int n);
     // This function will draw a card from the deck
-    void drawCard();
+    Card drawCard();
     // This function is used for genertaing a random number
     // int randomNumber();
     // // This function fills the deck with cards

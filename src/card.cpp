@@ -27,6 +27,21 @@ void Card::initializeId()
     this->id = (withRank <<= 8) || prime;
 }
 
+void Card::changeAvailability()
+{
+    this->available = !this->available;
+}
+
+bool Card::isAvailable()
+{
+    return this->available;
+}
+
+int Card::getRank()
+{
+    return this->rank;
+}
+
 std::ostream &operator<<(std::ostream &out, const Card &card)
 {
     out << card.value << " " << card.suit << " " << card.rank << " " << card.prime;

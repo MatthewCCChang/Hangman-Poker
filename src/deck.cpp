@@ -46,13 +46,26 @@ void Deck::initializeDeck()
     }
 }
 
-void Deck::drawCard()
+/*
+    WORK ON THIS NEXT: draw cards and subtract from deck; make use of availability of cards
+*/
+Card Deck::drawCard()
 {
-    // std::random_device rd;
-    // std::uniform_int_distribution<int> number(0, 51); // then shift by that much
-    // int temp = number(rd);
-    // int rand = 1 << temp;
-    return;
+    srand((unsigned)time(NULL));
+    while (true)
+    {
+        int value = rand() % 13;
+        int suit = rand() % 4;
+        // getRank for each card then random number from 1-4 for suit
+        int selected = value * 4 + suit;
+        if (cards[selected].isAvailable())
+        {
+            cards[selected].changeAvailability();
+            std::cout << "value: " << value << " suit: " << suit << std::endl;
+            std::cout << cards[selected] << std::endl;
+            return cards[selected];
+        }
+    }
 }
 
 std::ostream &operator<<(std::ostream &out, const Deck &deck)
