@@ -13,7 +13,12 @@ int main()
     game.fillHands();
     std::cout << "flop" << std::endl;
     game.flop();
+    game.displayCommunity();
+    game.turnRiver();
+    game.displayCommunity();
     std::cout << "testing" << std::endl;
+    game.displayHand();
+    game.displayOppHand();
     // std::cout << testing << std::endl;
     /*
         after presenting the board, will goto each hand and check flush->straight/HC->pairs and others to get ranking of that hand

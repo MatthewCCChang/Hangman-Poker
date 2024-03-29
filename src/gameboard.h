@@ -29,6 +29,12 @@ public:
     std::vector<Card> showHand(int times);
     // This function fills the opponent and the user's hands
     void fillHands();
+    // This function displays the user's hand
+    void displayHand();
+    // This function displays the opp's hand
+    void displayOppHand();
+    // This function displays the community board
+    void displayCommunity();
     // This function fills the community board with three cards initially
     void flop();
     // This function adds to the community board

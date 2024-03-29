@@ -37,9 +37,14 @@ bool Card::isAvailable()
     return this->available;
 }
 
-int Card::getRank()
+int Card::getRank() const
 {
-    return this->rank;
+    return rank;
+}
+
+std::string Card::getSuit() const
+{
+    return suit;
 }
 
 std::ostream &operator<<(std::ostream &out, const Card &card)

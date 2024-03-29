@@ -94,6 +94,36 @@ void Gameboard::fillHands()
     this->opp = showHand(2);
 }
 
+void Gameboard::displayHand()
+{
+    std::cout << "Your Hand: ";
+    for (const auto &card : this->user)
+    {
+        std::cout << "| " << card.getSuit() << " " << card.getRank() << " | ";
+    }
+    std::cout << "\n";
+}
+
+void Gameboard::displayOppHand()
+{
+    std::cout << "Opponent's Hand: ";
+    for (const auto &card : this->opp)
+    {
+        std::cout << "| " << card.getSuit() << " " << card.getRank() << " | ";
+    }
+    std::cout << "\n";
+}
+
+void Gameboard::displayCommunity()
+{
+    std::cout << "Community Board: ";
+    for (const auto &card : this->community)
+    {
+        std::cout << "| " << card.getSuit() << " " << card.getRank() << " | ";
+    }
+    std::cout << "\n";
+}
+
 void Gameboard::flop()
 {
     this->community = showHand(3);
