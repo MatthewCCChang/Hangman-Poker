@@ -75,10 +75,20 @@ void Gameboard::fillMap()
     }
 }
 
-std::vector<Card> Gameboard::showHand()
+// for opponent and self and flop/turn/river
+std::vector<Card> Gameboard::showHand(int times)
 {
     std::vector<Card> res;
-    Card drawn = deck.drawCard();
-    res.push_back(drawn);
+    for (int i = 0; i < times; i++)
+    {
+        Card drawn = deck.drawCard();
+        res.push_back(drawn);
+    }
     return res;
+}
+
+void Gameboard::fillHands()
+{
+    this->user = showHand(2);
+    this->opp = showHand(2);
 }

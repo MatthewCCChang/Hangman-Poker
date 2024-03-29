@@ -9,7 +9,7 @@ int main()
 {
     // Deck testing = Deck();
     Gameboard game = Gameboard();
-    game.showHand();
+    game.showHand(1);
     std::cout << "testing" << std::endl;
     // std::cout << testing << std::endl;
     /*

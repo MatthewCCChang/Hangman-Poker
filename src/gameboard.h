@@ -25,10 +25,14 @@ public:
     ~Gameboard();
     // This function fills the table with the rank of the hand and the prime product as a pair
     void fillMap();
-    // This function draws cards for the user and the opponent
-    std::vector<Card> showHand();
+    // This function draws cards from the deck
+    std::vector<Card> showHand(int times);
+    // This function fills the opponent and the user's hands
+    void fillrHands();
 
 private:
     std::map<int, int> table;
+    std::vector<Card> user;
+    std::vector<Card> opp;
     Deck deck;
 };
