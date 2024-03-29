@@ -10,6 +10,8 @@ int main()
     // Deck testing = Deck();
     Gameboard game = Gameboard();
     game.showHand(1);
+    // game.fillHands();
+    // game.flop();
     std::cout << "testing" << std::endl;
     // std::cout << testing << std::endl;
     /*

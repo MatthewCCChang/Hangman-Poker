@@ -28,11 +28,16 @@ public:
     // This function draws cards from the deck
     std::vector<Card> showHand(int times);
     // This function fills the opponent and the user's hands
-    void fillrHands();
+    void fillHands();
+    // This function fills the community board with three cards initially
+    void flop();
+    // This function adds to the community board
+    void turnRiver();
 
 private:
     std::map<int, int> table;
     std::vector<Card> user;
     std::vector<Card> opp;
+    std::vector<Card> community;
     Deck deck;
 };

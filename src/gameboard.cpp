@@ -2,6 +2,7 @@
 #include <sstream>
 #include <fstream>
 #include <iostream>
+#include <algorithm>
 #include "gameboard.h"
 Gameboard::Gameboard()
 {
@@ -91,4 +92,14 @@ void Gameboard::fillHands()
 {
     this->user = showHand(2);
     this->opp = showHand(2);
+}
+
+void Gameboard::flop()
+{
+    this->community = showHand(3);
+}
+
+void Gameboard::turnRiver()
+{
+    this->community.push_back(showHand(1)[0]);
 }
