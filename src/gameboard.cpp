@@ -173,11 +173,29 @@ int Gameboard::evaluateHand()
     }
 }
 
-void Gameboard::displayResults()
+void Gameboard::displayResults(std::string round)
 {
-    game.fillHands();
-    std::cout << "flop" << std::endl;
-    game.flop();
+    if (round == "flop")
+    {
+        fillHands();
+        std::cout << "flop" << std::endl;
+        // displayHand();
+        flop();
+        // displayCommunity();
+    }
+    else if (round == "turn")
+    {
+        std::cout << "turn" << std::endl;
+        turnRiver();
+        // displayCommunity();
+    }
+    else
+    {
+        std::cout << "river" << std::endl;
+        turnRiver();
+        // displayCommunity();
+    }
+    // get results of operations
     int res = evaluateHand();
     if (res)
     {
@@ -191,4 +209,11 @@ void Gameboard::displayResults()
     {
         std::cout << "Opponent has smaller hand" << std::endl;
     }
+}
+// show result of everything and user's best combo option and result for each round
+void Gameboard::start()
+{
+    displayResults(std::string("flop"));
+    displayResults(std::string("turn"));
+    displayResults(std::string("river"));
 }

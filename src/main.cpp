@@ -10,21 +10,19 @@ int main()
     // Deck testing = Deck();
     Gameboard game = Gameboard();
     // game.showHand(1);
-    game.fillHands();
-    std::cout << "flop" << std::endl;
-    game.flop();
-    game.displayCommunity();
-    std::cout << game.evaluateHand() << std::endl;
-    game.turnRiver();
-    game.displayCommunity();
-    std::cout << game.evaluateHand() << std::endl;
-    game.turnRiver();
-    game.displayCommunity();
-    // std::cout << "testing" << std::endl;
-    game.displayHand();
-    game.displayOppHand();
-    // std::cout << testing << std::endl;
-    std::cout << game.evaluateHand() << std::endl;
+    game.start();
+    // game.displayCommunity();
+    // std::cout << game.evaluateHand() << std::endl;
+    // game.turnRiver();
+    // game.displayCommunity();
+    // std::cout << game.evaluateHand() << std::endl;
+    // game.turnRiver();
+    // game.displayCommunity();
+    // // std::cout << "testing" << std::endl;
+    // game.displayHand();
+    // game.displayOppHand();
+    // // std::cout << testing << std::endl;
+    // std::cout << game.evaluateHand() << std::endl;
 
     /*
         after presenting the board, will goto each hand and check flush->straight/HC->pairs and others to get ranking of that hand

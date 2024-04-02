@@ -42,7 +42,9 @@ public:
     // This function adds to the community board
     void turnRiver();
     // This function returns the results of each round
-    void displayResults();
+    void displayResults(std::string round);
+    // This function initializes the gameboard and starts the game
+    void start();
 
 private:
     std::map<int, int> table;
