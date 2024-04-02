@@ -35,10 +35,14 @@ public:
     void displayOppHand();
     // This function displays the community board
     void displayCommunity();
+    // This function evaluates the hand and returns whether the user's hand is greater
+    int evaluateHand();
     // This function fills the community board with three cards initially
     void flop();
     // This function adds to the community board
     void turnRiver();
+    // This function returns the results of each round
+    void displayResults();
 
 private:
     std::map<int, int> table;
@@ -46,4 +50,6 @@ private:
     std::vector<Card> opp;
     std::vector<Card> community;
     Deck deck;
+    int userHandRank;
+    int oppHandRank;
 };

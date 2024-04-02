@@ -59,7 +59,7 @@ void Gameboard::fillMap()
                 }
                 counter++;
             }
-            table[key] = value;
+            table[value] = key;
             // std::cout << key << " " << value << std::endl;
             // break;
         }
@@ -132,4 +132,63 @@ void Gameboard::flop()
 void Gameboard::turnRiver()
 {
     this->community.push_back(showHand(1)[0]);
+}
+
+int Gameboard::evaluateHand()
+{
+    // two ptr in community vector, ecah time get three plus two from hand
+    int p1 = 1, p2 = 1;
+    int pmax = INT_MAX, omax = INT_MAX;
+    for (const auto &card : user)
+    {
+        p1 *= card.getPrime();
+    }
+    for (const auto &card : opp)
+    {
+        p2 *= card.getPrime();
+    }
+    int len = community.size() - 2;
+    for (int i = 0; i < len; i++)
+    {
+        // multiply by three common cards and see reference table for ranking, get max ranking
+        int temp = community[i].getPrime() * community[i + 1].getPrime() * community[i + 2].getPrime();
+        pmax = std::min(pmax, table[p1 * temp]); // get hand rank for user out of all
+        omax = std::min(omax, table[p2 * temp]); // get hand rank for opp
+    }
+    userHandRank = pmax;
+    oppHandRank = omax;
+    std::cout << userHandRank << "is user" << std::endl;
+    std::cout << oppHandRank << "is opp" << std::endl;
+    if (pmax > omax)
+    {
+        return 1; // user larger = worse rank
+    }
+    else if (pmax == omax)
+    {
+        return 0; // same
+    }
+    else
+    {
+        return -1; // user less = better rank
+    }
+}
+
+void Gameboard::displayResults()
+{
+    game.fillHands();
+    std::cout << "flop" << std::endl;
+    game.flop();
+    int res = evaluateHand();
+    if (res)
+    {
+        std::cout << "User has smaller hand" << std::endl;
+    }
+    else if (!res)
+    {
+        std::cout << "Tie" << std::endl;
+    }
+    else
+    {
+        std::cout << "Opponent has smaller hand" << std::endl;
+    }
 }

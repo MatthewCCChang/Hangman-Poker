@@ -37,14 +37,38 @@ bool Card::isAvailable()
     return this->available;
 }
 
-int Card::getRank() const
+std::string Card::getRank() const
 {
-    return rank;
+    if (rank >= 1 && rank <= 9)
+    {
+        return std::to_string(rank);
+    }
+    else if (!rank)
+    {
+        return "A";
+    }
+    else if (rank == 10)
+    {
+        return "J";
+    }
+    else if (rank == 11)
+    {
+        return "Q";
+    }
+    else
+    {
+        return "K";
+    }
 }
 
 std::string Card::getSuit() const
 {
     return suit;
+}
+
+int Card::getPrime() const
+{
+    return prime;
 }
 
 std::ostream &operator<<(std::ostream &out, const Card &card)
