@@ -121,7 +121,8 @@ void Gameboard::displayCommunity()
     {
         std::cout << "| " << card.getSuit() << " " << card.getRank() << " | ";
     }
-    std::cout << "\n";
+    std::cout << "\n"
+              << std::endl;
 }
 
 void Gameboard::flop()
@@ -157,8 +158,8 @@ int Gameboard::evaluateHand()
     }
     userHandRank = pmax;
     oppHandRank = omax;
-    std::cout << userHandRank << "is user" << std::endl;
-    std::cout << oppHandRank << "is opp" << std::endl;
+    // std::cout << userHandRank << "is user" << std::endl;
+    // std::cout << oppHandRank << "is opp" << std::endl;
     if (pmax > omax)
     {
         return 1; // user larger = worse rank
@@ -178,28 +179,34 @@ void Gameboard::displayResults(std::string round)
     if (round == "flop")
     {
         fillHands();
-        std::cout << "flop" << std::endl;
-        // displayHand();
+        std::cout << "-----Flop-----\n"
+                  << std::endl;
         flop();
         // displayCommunity();
     }
     else if (round == "turn")
     {
-        std::cout << "turn" << std::endl;
+        std::cout << "-----Turn-----\n"
+                  << std::endl;
         turnRiver();
         // displayCommunity();
     }
     else
     {
-        std::cout << "river" << std::endl;
+        std::cout << "-----River-----\n"
+                  << std::endl;
         turnRiver();
         // displayCommunity();
     }
+    displayHand();
+    displayCommunity();
     // get results of operations
     int res = evaluateHand();
+    std::cout << "Results:" << std::endl;
     if (res)
     {
-        std::cout << "User has smaller hand" << std::endl;
+        std::cout << "Opponent wins this round\n"
+                  << std::endl;
     }
     else if (!res)
     {
@@ -207,7 +214,7 @@ void Gameboard::displayResults(std::string round)
     }
     else
     {
-        std::cout << "Opponent has smaller hand" << std::endl;
+        std::cout << "You win this round" << std::endl;
     }
 }
 // show result of everything and user's best combo option and result for each round

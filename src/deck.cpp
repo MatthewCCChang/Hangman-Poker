@@ -61,8 +61,8 @@ Card Deck::drawCard()
         if (cards[selected].isAvailable())
         {
             cards[selected].changeAvailability();
-            std::cout << "value: " << value << " suit: " << suit << std::endl;
-            std::cout << cards[selected] << std::endl;
+            // std::cout << "value: " << value << " suit: " << suit << std::endl;
+            // std::cout << cards[selected] << std::endl;
             return cards[selected];
         }
     }
