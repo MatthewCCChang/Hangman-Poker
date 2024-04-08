@@ -45,9 +45,12 @@ public:
     void displayResults(std::string round);
     // This function initializes the gameboard and starts the game
     void start();
+    // This function prompts the user to enter in a guess of the opponent's hand
+    void guessOppHand();
 
 private:
     std::map<int, int> table;
+    std::map<std::string, int> rank;
     std::vector<Card> user;
     std::vector<Card> opp;
     std::vector<Card> community;

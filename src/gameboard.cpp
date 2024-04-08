@@ -1,4 +1,5 @@
 #include <string>
+#include <string_view>
 #include <sstream>
 #include <fstream>
 #include <iostream>
@@ -18,7 +19,7 @@ Gameboard::~Gameboard()
 
 void Gameboard::fillMap()
 {
-    std::map<std::string, int> rank = {
+    rank = {
         {"A", 41},
         {"K", 37},
         {"Q", 31},
@@ -223,4 +224,29 @@ void Gameboard::start()
     displayResults(std::string("flop"));
     displayResults(std::string("turn"));
     displayResults(std::string("river"));
+    guessOppHand();
+}
+
+void Gameboard::guessOppHand()
+{
+    // cout info then cin stuff
+    std::string res;
+    std::string s;
+    std::cout << "Please guess what the opponent hand contains in this format:\n  Ex: Diamond A Spades T" << std::endl;
+    std::getline(std::cin, res);
+    while (!(res.find("Diamond") == 0) && !(res.find("Hearts") == 0) && !(res.find("Spades") == 0) && !(res.find("Clubs") == 0))
+    {
+        std::cout << "Please guess what the opponent hand contains in this format:  Ex: Diamond A Spades T\n"
+                  << std::endl;
+        std::getline(std::cin, res);
+    }
+    std::stringstream ss(res);
+    std::vector<std::string> contents;
+    while (std::getline(ss, s, ' '))
+    {
+        contents.push_back(s);
+    }
+    int firstGuess = rank[contents[1]];  // the prime num
+    int secondGuess = rank[contents[3]]; // the prime num
+    std::cout << firstGuess << secondGuess << std::endl;
 }
