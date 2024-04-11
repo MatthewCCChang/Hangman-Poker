@@ -248,5 +248,19 @@ void Gameboard::guessOppHand()
     }
     int firstGuess = rank[contents[1]];  // the prime num
     int secondGuess = rank[contents[3]]; // the prime num
+    std::string firstSuit = contents[0];
+    std::string secondSuit = contents[2];
+    if (opp[0].getPrime() == firstGuess && opp[0].getSuit() == firstSuit && opp[1].getPrime() == secondGuess && opp[1].getSuit() == secondSuit)
+    {
+        std::cout << "You won! The opponent's hand was: " << opp[0].getSuit() << " " << opp[0].getRank() << "and "
+                  << opp[1].getSuit() << " " << opp[1].getRank() << std::endl;
+        // add player win by one
+    }
+    else
+    {
+        std::cout << "Uh oh! Wrong guess! Try again" << std::endl;
+        // hangman tostring
+    }
+
     std::cout << firstGuess << secondGuess << std::endl;
 }
