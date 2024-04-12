@@ -2,6 +2,7 @@
 #include <vector>
 #include "deck.h"
 #include "card.h"
+#include "hangman.h"
 // calculates the probability stuff here
 
 /*
@@ -57,4 +58,5 @@ private:
     Deck deck;
     int userHandRank;
     int oppHandRank;
+    Hangman hang;
 };

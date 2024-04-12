@@ -10,6 +10,7 @@ Gameboard::Gameboard()
     // fill the map
     deck = Deck();
     fillMap();
+    hang = Hangman();
 }
 
 Gameboard::~Gameboard()
@@ -262,5 +263,5 @@ void Gameboard::guessOppHand()
         // hangman tostring
     }
 
-    std::cout << firstGuess << secondGuess << std::endl;
+    std::cout << firstGuess << " " << secondGuess << std::endl;
 }

@@ -4,13 +4,16 @@
 #include "card.h"
 #include "deck.h"
 #include "gameboard.h"
+#include "hangman.h"
 
 int main()
 {
     // Deck testing = Deck();
-    Gameboard game = Gameboard();
+    // Gameboard game = Gameboard();
     // game.showHand(1);
-    game.start();
+    // game.start();
+    Hangman hand = Hangman();
+    std::cout << hand << std::endl;
     // game.displayCommunity();
     // std::cout << game.evaluateHand() << std::endl;
     // game.turnRiver();
