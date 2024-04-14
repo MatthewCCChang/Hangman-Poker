@@ -2,9 +2,9 @@
 
 Hangman::Hangman()
 {
-    // create figure
-    hangman = {
-        R"(
+      // create figure
+      hangman = {
+          R"(
   +---+
   |   |
       |
@@ -12,23 +12,23 @@ Hangman::Hangman()
       |
       |
 =========)",
-        R"(
-  +---+
-  |   |
-  O   |
-      |
-      |
-      |
-=========)",
-        R"(
+          R"(
   +---+
   |   |
   O   |
+      |
+      |
+      |
+=========)",
+          R"(
+  +---+
+  |   |
+  O   |
   |   |
       |
       |
 =========)",
-        R"(
+          R"(
   +---+
   |   |
   O   |
@@ -36,7 +36,7 @@ Hangman::Hangman()
       |
       |
 =========)",
-        R"(
+          R"(
   +---+
   |   |
   O   |
@@ -44,7 +44,7 @@ Hangman::Hangman()
       |
       |
 =========)",
-        R"(
+          R"(
   +---+
   |   |
   O   |
@@ -52,7 +52,7 @@ Hangman::Hangman()
  /    |
       |
 =========)",
-        R"(
+          R"(
   +---+
   |   |
   O   |
@@ -60,23 +60,32 @@ Hangman::Hangman()
  / \  |
       |
 =========)"};
-    // initialize life
-    life = 0;
+      // initialize life
+      life = 0;
 }
 
 Hangman::~Hangman()
 {
-    // nothing
+      // nothing
 }
 
 void Hangman::subtractLife()
 {
-    // subtract a life
+      // subtract a life
+      if (life < 6)
+      {
+            life++;
+      }
+}
+
+bool Hangman::isDead()
+{
+      return life == 6;
 }
 
 std::ostream &operator<<(std::ostream &out, const Hangman &hang)
 {
-    // print out figureine
-    out << hang.hangman[hang.life];
-    return out;
+      // print out figureine
+      out << hang.hangman[hang.life];
+      return out;
 }

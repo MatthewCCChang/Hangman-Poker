@@ -260,6 +260,8 @@ void Gameboard::guessOppHand()
     else
     {
         std::cout << "Uh oh! Wrong guess! Try again" << std::endl;
+        hang.subtractLife();
+        std::cout << hang << std::endl;
         // hangman tostring
     }
 
