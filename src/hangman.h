@@ -16,6 +16,7 @@ public:
     void subtractLife();
     // void addLife();
     bool isDead();
+    int getLife();
     friend std::ostream &operator<<(std::ostream &out, const Hangman &hang);
 };
 

@@ -39,11 +39,11 @@ bool Card::isAvailable()
 
 std::string Card::getRank() const
 {
-    if (rank >= 1 && rank <= 9)
+    if (rank >= 1 && rank < 9)
     {
-        return std::to_string(rank);
+        return std::to_string(rank + 1);
     }
-    else if (!rank)
+    else if (rank == 0)
     {
         return "A";
     }

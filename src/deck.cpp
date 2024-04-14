@@ -23,15 +23,15 @@ bool Deck::isPrime(int n)
 
 void Deck::initializePrime()
 {
+    this->prime.push_back(41);
     this->prime.push_back(2);
-    for (int i = 3; i < 44; i++)
+    for (int i = 3; i < 40; i++)
     {
         if (isPrime(i))
         {
             this->prime.push_back(i);
         }
     }
-    std::cout << "reached here" << std::endl;
 }
 
 void Deck::initializeDeck()

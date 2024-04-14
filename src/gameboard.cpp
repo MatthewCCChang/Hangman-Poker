@@ -225,6 +225,7 @@ void Gameboard::start()
     displayResults(std::string("flop"));
     displayResults(std::string("turn"));
     displayResults(std::string("river"));
+    // displayOppHand();
     guessOppHand();
 }
 
@@ -233,37 +234,47 @@ void Gameboard::guessOppHand()
     // cout info then cin stuff
     std::string res;
     std::string s;
-    std::cout << "Please guess what the opponent hand contains in this format:\n  Ex: Diamond A Spades T" << std::endl;
-    std::getline(std::cin, res);
-    while (!(res.find("Diamond") == 0) && !(res.find("Hearts") == 0) && !(res.find("Spades") == 0) && !(res.find("Clubs") == 0))
+    while (!hang.isDead())
     {
-        std::cout << "Please guess what the opponent hand contains in this format:  Ex: Diamond A Spades T\n"
-                  << std::endl;
+        std::cout << "Please guess what the opponent hand contains in this format:\n  Ex: Diamonds A Spades T" << std::endl;
         std::getline(std::cin, res);
-    }
-    std::stringstream ss(res);
-    std::vector<std::string> contents;
-    while (std::getline(ss, s, ' '))
-    {
-        contents.push_back(s);
-    }
-    int firstGuess = rank[contents[1]];  // the prime num
-    int secondGuess = rank[contents[3]]; // the prime num
-    std::string firstSuit = contents[0];
-    std::string secondSuit = contents[2];
-    if (opp[0].getPrime() == firstGuess && opp[0].getSuit() == firstSuit && opp[1].getPrime() == secondGuess && opp[1].getSuit() == secondSuit)
-    {
-        std::cout << "You won! The opponent's hand was: " << opp[0].getSuit() << " " << opp[0].getRank() << "and "
-                  << opp[1].getSuit() << " " << opp[1].getRank() << std::endl;
-        // add player win by one
-    }
-    else
-    {
-        std::cout << "Uh oh! Wrong guess! Try again" << std::endl;
-        hang.subtractLife();
-        std::cout << hang << std::endl;
-        // hangman tostring
+        while (!(res.find("Diamond") == 0) && !(res.find("Hearts") == 0) && !(res.find("Spades") == 0) && !(res.find("Clubs") == 0))
+        {
+            std::cout << "Please guess what the opponent hand contains in this format:  Ex: Diamonds A Spades T\n"
+                      << std::endl;
+            std::getline(std::cin, res);
+        }
+        std::stringstream ss(res);
+        std::vector<std::string> contents;
+        while (std::getline(ss, s, ' '))
+        {
+            contents.push_back(s);
+        }
+        int firstGuess = rank[contents[1]];  // the prime num
+        int secondGuess = rank[contents[3]]; // the prime num
+        std::cout << firstGuess << " " << secondGuess << std::endl;
+        std::cout << opp[0].getPrime() << " " << opp[1].getPrime() << std::endl;
+        std::cout << opp[0].getRank() << " " << opp[1].getRank() << std::endl;
+        std::string firstSuit = contents[0];
+        std::string secondSuit = contents[2];
+        std::cout << opp[0].getSuit() << " " << opp[1].getSuit() << std::endl;
+        std::cout << firstSuit << " " << secondSuit << std::endl;
+        if (opp[0].getPrime() == firstGuess && opp[0].getSuit() == firstSuit && opp[1].getPrime() == secondGuess && opp[1].getSuit() == secondSuit)
+        {
+            std::cout << "You won! The opponent's hand was: " << opp[0].getSuit() << " " << opp[0].getRank() << " and "
+                      << opp[1].getSuit() << " " << opp[1].getRank() << std::endl;
+            break;
+            // add player win by one
+        }
+        else
+        {
+            std::cout << "Uh oh! Wrong guess! Try again" << std::endl;
+            hang.subtractLife();
+            std::cout << "You have " << hang.getLife() << "lives left!" << std::endl;
+            std::cout << hang << std::endl;
+            // hangman tostring
+        }
     }
 
-    std::cout << firstGuess << " " << secondGuess << std::endl;
+    // std::cout << firstGuess << " " << secondGuess << std::endl;
 }

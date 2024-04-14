@@ -83,6 +83,11 @@ bool Hangman::isDead()
       return life == 6;
 }
 
+int Hangman::getLife()
+{
+      return 6 - life;
+}
+
 std::ostream &operator<<(std::ostream &out, const Hangman &hang)
 {
       // print out figureine

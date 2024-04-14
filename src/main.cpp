@@ -9,21 +9,21 @@
 int main()
 {
     // Deck testing = Deck();
-    // Gameboard game = Gameboard();
+    Gameboard game = Gameboard();
     // game.showHand(1);
-    // game.start();
-    Hangman hand = Hangman();
-    std::cout << hand << std::endl;
-    hand.subtractLife();
-    hand.subtractLife();
-    hand.subtractLife();
-    hand.subtractLife();
-    hand.subtractLife();
-    std::cout << hand << std::endl;
-    std::cout << hand.isDead() << std::endl;
-    hand.subtractLife();
-    std::cout << hand << std::endl;
-    std::cout << hand.isDead() << std::endl;
+    game.start();
+    // Hangman hand = Hangman();
+    // std::cout << hand << std::endl;
+    // hand.subtractLife();
+    // hand.subtractLife();
+    // hand.subtractLife();
+    // hand.subtractLife();
+    // hand.subtractLife();
+    // std::cout << hand << std::endl;
+    // std::cout << hand.isDead() << std::endl;
+    // hand.subtractLife();
+    // std::cout << hand << std::endl;
+    // std::cout << hand.isDead() << std::endl;
     // game.displayCommunity();
     // std::cout << game.evaluateHand() << std::endl;
     // game.turnRiver();
