@@ -11,6 +11,7 @@ Gameboard::Gameboard()
     deck = Deck();
     fillMap();
     hang = Hangman();
+    play = Player();
 }
 
 Gameboard::~Gameboard()
@@ -263,6 +264,7 @@ void Gameboard::guessOppHand()
         {
             std::cout << "You won! The opponent's hand was: " << opp[0].getSuit() << " " << opp[0].getRank() << " and "
                       << opp[1].getSuit() << " " << opp[1].getRank() << std::endl;
+            play.addWin();
             break;
             // add player win by one
         }
@@ -270,11 +272,22 @@ void Gameboard::guessOppHand()
         {
             std::cout << "Uh oh! Wrong guess! Try again" << std::endl;
             hang.subtractLife();
-            std::cout << "You have " << hang.getLife() << "lives left!" << std::endl;
+            std::cout << "You have " << hang.getLife() << " lives left!" << std::endl;
             std::cout << hang << std::endl;
             // hangman tostring
         }
     }
-
-    // std::cout << firstGuess << " " << secondGuess << std::endl;
+    if (hang.isDead())
+    {
+        play.addLoss();
+    }
+    /*
+        put in a different function called endGame()
+    */
+    std::cout << "You Lost! This was the opponent's hand: " << std::end;
+    displayOppHand();
+    std::cout << "Would You like to play again? (y/n)" << std::endl;
+    // std::string answer << std::cin;
+    // if yes, then call deck shuffle, fillHand
+    // if no, print the stats
 }

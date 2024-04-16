@@ -3,6 +3,7 @@
 #include "deck.h"
 #include "card.h"
 #include "hangman.h"
+#include "player.h"
 // calculates the probability stuff here
 
 /*
@@ -59,4 +60,5 @@ private:
     int userHandRank;
     int oppHandRank;
     Hangman hang;
+    Player play;
 };
