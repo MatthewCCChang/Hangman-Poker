@@ -284,7 +284,7 @@ void Gameboard::guessOppHand()
     /*
         put in a different function called endGame()
     */
-    std::cout << "You Lost! This was the opponent's hand: " << std::end;
+    std::cout << "You Lost! This was the opponent's hand: " << std::endl;
     displayOppHand();
     std::cout << "Would You like to play again? (y/n)" << std::endl;
     // std::string answer << std::cin;
