@@ -284,10 +284,25 @@ void Gameboard::guessOppHand()
     /*
         put in a different function called endGame()
     */
-    std::cout << "You Lost! This was the opponent's hand: " << std::endl;
+}
+
+void Gameboard::endGame(bool win)
+{
+    std::string res = win ? "Won" : "Lost";
+    std::cout << "You" + res + "! This was the opponent's hand: " << std::endl;
     displayOppHand();
     std::cout << "Would You like to play again? (y/n)" << std::endl;
-    // std::string answer << std::cin;
+    std::string answer;
+    std::getline(std::cin, answer);
     // if yes, then call deck shuffle, fillHand
-    // if no, print the stats
+    if ((answer == "y") || (answer == "Y"))
+    {
+        deck.initializeDeck();
+        fillHands();
+    }
+    else
+    {
+        // if no, print the stats
+        std::cout << play << std::endl;
+    }
 }

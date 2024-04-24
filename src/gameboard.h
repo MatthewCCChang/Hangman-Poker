@@ -49,6 +49,8 @@ public:
     void start();
     // This function prompts the user to enter in a guess of the opponent's hand
     void guessOppHand();
+    // This function ends the game
+    void endGame(bool win);
 
 private:
     std::map<int, int> table;
