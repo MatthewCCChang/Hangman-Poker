@@ -280,10 +280,12 @@ void Gameboard::guessOppHand()
     if (hang.isDead())
     {
         play.addLoss();
+        endGame(0);
     }
-    /*
-        put in a different function called endGame()
-    */
+    else
+    {
+        endGame(1);
+    }
 }
 
 void Gameboard::endGame(bool win)
