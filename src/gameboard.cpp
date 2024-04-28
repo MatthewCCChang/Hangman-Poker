@@ -253,17 +253,12 @@ void Gameboard::guessOppHand()
         }
         int firstGuess = rank[contents[1]];  // the prime num
         int secondGuess = rank[contents[3]]; // the prime num
-        std::cout << firstGuess << " " << secondGuess << std::endl;
-        std::cout << opp[0].getPrime() << " " << opp[1].getPrime() << std::endl;
-        std::cout << opp[0].getRank() << " " << opp[1].getRank() << std::endl;
         std::string firstSuit = contents[0];
         std::string secondSuit = contents[2];
-        std::cout << opp[0].getSuit() << " " << opp[1].getSuit() << std::endl;
-        std::cout << firstSuit << " " << secondSuit << std::endl;
         if (opp[0].getPrime() == firstGuess && opp[0].getSuit() == firstSuit && opp[1].getPrime() == secondGuess && opp[1].getSuit() == secondSuit)
         {
-            std::cout << "You won! The opponent's hand was: " << opp[0].getSuit() << " " << opp[0].getRank() << " and "
-                      << opp[1].getSuit() << " " << opp[1].getRank() << std::endl;
+            // std::cout << "You won! The opponent's hand was: " << opp[0].getSuit() << " " << opp[0].getRank() << " and "
+            //           << opp[1].getSuit() << " " << opp[1].getRank() << std::endl;
             play.addWin();
             break;
             // add player win by one
@@ -291,7 +286,7 @@ void Gameboard::guessOppHand()
 void Gameboard::endGame(bool win)
 {
     std::string res = win ? "Won" : "Lost";
-    std::cout << "You" + res + "! This was the opponent's hand: " << std::endl;
+    std::cout << "You " + res + "! This was the opponent's hand: " << std::endl;
     displayOppHand();
     std::cout << "Would You like to play again? (y/n)" << std::endl;
     std::string answer;
@@ -301,6 +296,7 @@ void Gameboard::endGame(bool win)
     {
         deck.initializeDeck();
         fillHands();
+        start();
     }
     else
     {
